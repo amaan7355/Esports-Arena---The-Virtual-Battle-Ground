@@ -1,6 +1,6 @@
 import React from 'react'
 
-const NotFound = () => {
+const Notfound = () => {
   return (
     <div className='vh-100'>
         <h1 className='text-center display-1 fw-bold'>404</h1>
@@ -10,4 +10,6 @@ const NotFound = () => {
   )
 }
 
-export default NotFound;
+export default Notfound;
+
+// rafce
