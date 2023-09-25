@@ -26,12 +26,12 @@ const Navbar = () => {
             <>
                 <li className="nav-item">
                     <NavLink className="nav-link" to="/login">
-                        Login
+                        Sign in
                     </NavLink>
                 </li>
                 <li className="nav-item">
                     <NavLink className="nav-link" to="/signup">
-                        Signup
+                        Sign up
                     </NavLink>
                 </li>
             </>
@@ -42,7 +42,7 @@ const Navbar = () => {
         <nav className="navbar navbar-expand-lg bg-body-territory">
             <div className="container-fluid">
                 <a className="navbar-brand" href="#">
-                    <h2>React</h2>
+                    <img src="./Esports Arena-logos_black_updated.png" alt="" className='d-block m-auto' width={'100rem'} />
                 </a>
                 <button
                     className="navbar-toggler"

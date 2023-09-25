@@ -2,7 +2,7 @@ import { useFormik } from 'formik';
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import Swal from 'sweetalert2';
-import {motion} from 'framer-motion';
+import { motion } from 'framer-motion';
 import * as Yup from 'yup';
 
 const SignupSchema = Yup.object().shape({
@@ -23,7 +23,7 @@ const SignUp = () => {
       email: '',
       password: ''
     },
-    onSubmit: async (values, {setSubmitting })=> {
+    onSubmit: async (values, { setSubmitting }) => {
       values.avatar = selFile;
       setSubmitting(true);
 
@@ -66,62 +66,80 @@ const SignUp = () => {
     validationSchema: SignupSchema,
   });
 
-    const uploadFile = async (e) => {
-      if(!e.target.files) return;
+  const uploadFile = async (e) => {
+    if (!e.target.files) return;
 
-      const file = e.target.files[0];
-      console.log(file.name);
-      setSelFile(file.name);
+    const file = e.target.files[0];
+    console.log(file.name);
+    setSelFile(file.name);
 
-      const fd = new FormData();
-      fd.append('myfile', file);
+    const fd = new FormData();
+    fd.append('myfile', file);
 
-      const res = await fetch('http://localhost:5000/utils/uploadfile', {
-        method: 'POST',
-        body: fd
-      });
-      console.log(res.status);
-    }
+    const res = await fetch('http://localhost:5000/utils/uploadfile', {
+      method: 'POST',
+      body: fd
+    });
+    console.log(res.status);
+  }
   return (
     <motion.div
       initial={{ x: '-100%' }}
       animate={{ x: 0 }}
       exit={{ x: '100%' }}
-      transition={{duration: 0.5, stiffness: 100, type: 'spring', damping: 4}}
-      >
-      <div className="form-body">
-        <div className="formcontainer">
-          <form onSubmit={signUpform.handleSubmit}>
-            <h2 className="main-heading">SignUp Here</h2>
-            <label>
-              <h4>Full Name<span style={{ color: 'red' }}> <sup>*</sup></span></h4>
-            </label>
-            <span style={{ fontSize: "1em", color: 'red', marginLeft: 20 }}>{signUpform.touched.name && signUpform.errors.name}</span>
-            <input type="text" name='name' className="input" placeholder="Your Name" onChange={signUpform.handleChange} value={signUpform.values.name} />
-            <label htmlFor="">
-              <h4>Email <span style={{ color: 'red' }}> <sup>*</sup></span></h4>
-            </label>
-            <span style={{ fontSize: "1em", color: 'red', marginLeft: 20 }}>{signUpform.touched.email && signUpform.errors.email}</span>
-            <input type="email" name='email' className="input" placeholder="Your Email"
-              onChange={signUpform.handleChange} value={signUpform.values.email} />
-            <label htmlFor="">
-              <h4>Password <span style={{ color: 'red' }}> <sup>*</sup></span></h4>
-            </label>
-            <input type="password" name='password' className="input" placeholder="Your Password" onChange={signUpform.handleChange} value={signUpform.values.password} />
-            <input type="file" className='my-3' onChange={uploadFile} />
-            <br />
-            <button disabled={signUpform.isSubmitting} className="mybtn1" type='submit'>
-              {
-                signUpform.isSubmitting ? (
-                  <>
-                    <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true" style={{ marginRight: '10px' }}></span>Loading...
-                  </>
-                ) : 'Submit'
-              }
-            </button>
-          </form>
+      transition={{ duration: 0.5, stiffness: 100, type: 'spring', damping: 4 }}
+    >
+    <div className='signup-body'>
+      <div className="container p-5">
+        <div className="card shadow signup-card">
+          <div className=''>
+            <div className='row text-white'>
+              <div className='col-md-5 p-5'>
+                <form onSubmit={signUpform.handleSubmit} className=''>
+                  <h3 className="text-center">Sign up to </h3>
+                  <h2 className='text-center fw-bold'>E-Sports Arena</h2><hr />
+                  <label className='form-label'>
+                  Full Name<span style={{ color: 'red' }}> <sup>*</sup></span>
+                  </label>
+                  <span style={{ fontSize: "1em", color: 'red', marginLeft: 20 }}>{signUpform.touched.name && signUpform.errors.name}</span>
+                  <input type="text" name='name' className="signup-input text-white mb-4 " placeholder="Your Name" onChange={signUpform.handleChange} value={signUpform.values.name} />
+                  <label className='form-label'>
+                  Email <span style={{ color: 'red' }}> <sup>*</sup></span>
+                  </label>
+                  <span style={{ fontSize: "1em", color: 'red', marginLeft: 20 }}>{signUpform.touched.email && signUpform.errors.email}</span>
+                  <input type="email" name='email' className="signup-input text-white mb-4 " placeholder="Your Email"
+                    onChange={signUpform.handleChange} value={signUpform.values.email} />
+                  <label className='form-label'>
+                  Password <span style={{ color: 'red' }}> <sup>*</sup></span>
+                  </label>
+                  <input type="password" name='password' className="signup-input text-white mb-4" placeholder="Your Password" onChange={signUpform.handleChange} value={signUpform.values.password} />
+                  <input type="file" className='my-3' onChange={uploadFile} />
+                  <br />
+                  <button disabled={signUpform.isSubmitting} className="btn btn-light w-100 my-4" type='submit'>
+                    {
+                      signUpform.isSubmitting ? (
+                        <>
+                          <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true" style={{ marginRight: '10px' }}></span>Loading...
+                        </>
+                      ) : 'Submit'
+                    }
+                  </button>
+                  <p className='text-center signup-tc'><input type="checkbox" className='me-2' /> I accept <span className='text-decoration-underline fw-bold'>terms and conditions</span> & <span className='text-decoration-underline fw-bold'>privacy policy</span></p>
+                </form>
+              </div>
+              <div className='flex col-md-7 bg-dark'>
+                <img src="./Esports Arena-logos_white.png" className='d-block m-auto w-50' alt="" />
+                <h2 className='w-80 text-center'>Virtual Reality is a new Meta of Gaming. Raise Your Imagination & Never Stop.</h2><br />
+                <div className='align-items-bottom justify-content-bottom'>
+                <p className='mt-5 text-center'>Do you have any questions?<span className='text-decoration-underline fw-bold ms-2'>Contact us</span></p>
+                </div>
+                
+              </div>
+            </div>
+          </div>
         </div>
       </div>
+    </div>
     </motion.div>
   )
 }
