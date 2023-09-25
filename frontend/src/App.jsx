@@ -10,6 +10,8 @@ import { Toaster } from 'react-hot-toast';
 import { AppProvider } from './AppContext';
 import UserAuth from './UserAuth';
 import Navbar from './components/Navbar';
+import AddTournament from './components/AddTournament';
+import ListTournament from './components/ListTournament';
 
 
 function App() {
@@ -26,6 +28,8 @@ function App() {
               <Route element={<Home />} path='/' />
               <Route element={<Login />} path='/login' />
               <Route element={<SignUp />} path='/signup' />
+              <Route element={<AddTournament />} path='/addtournament' />
+              <Route element={<ListTournament />} path='/listtournament' />
               <Route element={<UserAuth> <ManageUser /> </UserAuth> } path='/manageuser' />
               <Route element={<Notfound />} path='/*' />
             </Routes>

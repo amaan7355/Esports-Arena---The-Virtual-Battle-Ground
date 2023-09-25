@@ -89,12 +89,12 @@ const SignUp = () => {
       exit={{ x: '100%' }}
       transition={{ duration: 0.5, stiffness: 100, type: 'spring', damping: 4 }}
     >
-    <div className='signup-body'>
-      <div className="container p-5">
+    <div className='body'>
+      <div className="container p-5 w-75">
         <div className="card shadow signup-card">
           <div className=''>
             <div className='row text-white'>
-              <div className='col-md-5 p-5'>
+              <div className='col-md-6  p-5'>
                 <form onSubmit={signUpform.handleSubmit} className=''>
                   <h3 className="text-center">Sign up to </h3>
                   <h2 className='text-center fw-bold'>E-Sports Arena</h2><hr />
@@ -127,7 +127,7 @@ const SignUp = () => {
                   <p className='text-center signup-tc'><input type="checkbox" className='me-2' /> I accept <span className='text-decoration-underline fw-bold'>terms and conditions</span> & <span className='text-decoration-underline fw-bold'>privacy policy</span></p>
                 </form>
               </div>
-              <div className='flex col-md-7 bg-dark'>
+              <div className='col-md-6  bg-dark'>
                 <img src="./Esports Arena-logos_white.png" className='d-block m-auto w-50' alt="" />
                 <h2 className='w-80 text-center'>Virtual Reality is a new Meta of Gaming. Raise Your Imagination & Never Stop.</h2><br />
                 <div className='align-items-bottom justify-content-bottom'>

@@ -63,6 +63,16 @@ const Navbar = () => {
                             </NavLink>
                         </li>
                         <li className="nav-item">
+                            <NavLink className="nav-link" to="/addtournament">
+                                Add Tournament
+                            </NavLink>
+                        </li>
+                        <li className="nav-item">
+                            <NavLink className="nav-link" to="/listtournament">
+                                List Tournament
+                            </NavLink>
+                        </li>
+                        <li className="nav-item">
                             <NavLink className="nav-link" to="/manageuser">
                                 ManageUser
                             </NavLink>
