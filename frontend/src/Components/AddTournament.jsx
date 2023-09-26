@@ -21,13 +21,15 @@ const AddTournament = () => {
             name: '',
             category: '',
             teamsize: '',
+            prize: '',
             venue: '',
-            description: '',
-            schedule: ''
+            logo: '',
+            schedule: '',
+            description: ''
         },
         onSubmit: async (values, { setSubmitting }) => {
             console.log(values);
-            values.avatar = selFile;
+            values.logo = selFile;
             setSubmitting(true);
 
             // setTimeout(() => {
@@ -47,6 +49,23 @@ const AddTournament = () => {
         }
     })
 
+    const uploadFile = async (e) => {
+        if(!e.target.files) return;
+  
+        const file = e.target.files[0];
+        console.log(file.name);
+        setSelFile(file.name);
+  
+        const fd = new FormData();
+        fd.append('myfile', file);
+  
+        const res = await fetch('http://localhost:5000/utils/uploadfile', {
+          method: 'POST',
+          body: fd
+        });
+        console.log(res.status);
+      }
+
 
     return (
         <div className='body py-5'>
@@ -54,18 +73,22 @@ const AddTournament = () => {
                 <div className='card shadow'>
                     <div className='card-body'>
                         <form action="" onSubmit={addTournament.handleSubmit} >
-                            <label>Name: </label>
+                            <label>Tournament Name</label>
                             <input type="text" name='name' className='form-control mb-3' onChange={addTournament.handleChange} value={addTournament.values.name} />
-                            <label>Category: </label>
+                            <label>Category</label>
                             <input type="text" name='category' className='form-control mb-3' onChange={addTournament.handleChange} value={addTournament.values.category} />
-                            <label>Team Size: </label>
+                            <label>Team Size</label>
                             <input type="text" name='teamsize' className='form-control mb-3' onChange={addTournament.handleChange} value={addTournament.values.teamsize} />
-                            <label>Venue: </label>
+                            <label>Prize</label>
+                            <input type="text" name='prize' className='form-control mb-3' onChange={addTournament.handleChange} value={addTournament.values.prize} />
+                            <label>Venue</label>
                             <input type="text" name='venue' className='form-control mb-3' onChange={addTournament.handleChange} value={addTournament.values.venue} />
-                            <label>Description: </label>
-                            <input type="text" name='description' className='form-control mb-3' onChange={addTournament.handleChange} value={addTournament.values.description} />
-                            <label>Schedule: </label>
+                            <label>Event Date & Time: </label>
                             <input type="datetime-local" name='schedule' className='form-control mb-3' onChange={addTournament.handleChange} value={addTournament.values.schedule} />
+                            <label className='me-5'>Tournament Logo</label>
+                            <input type="file" className='mb-3' onChange={uploadFile}  /><br />
+                            <label>Description</label>
+                            <textarea rows='2' cols='8' name='description' className='form-control mb-3' onChange={addTournament.handleChange} value={addTournament.values.description} />
                             <button disabled={addTournament.isSubmitting} className='btn btn-success w-100' type='submit'>
                                 {
                                     addTournament.isSubmitting ? (
