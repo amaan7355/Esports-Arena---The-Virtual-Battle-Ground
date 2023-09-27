@@ -26,12 +26,12 @@ const Navbar = () => {
             <>
                 <li className="nav-item">
                     <NavLink className="nav-link" to="/login">
-                        Sign in
+                        <font className='text-white'>Sign in</font>
                     </NavLink>
                 </li>
                 <li className="nav-item">
                     <NavLink className="nav-link" to="/signup">
-                        Sign up
+                    <font className='text-white'>Sign up</font>
                     </NavLink>
                 </li>
             </>
@@ -39,10 +39,10 @@ const Navbar = () => {
         }
     }
     return (
-        <nav className="navbar navbar-expand-lg bg-body-territory">
+        <nav className="navbar navbar-expand-lg bg-body-territory body">
             <div className="container-fluid">
                 <a className="navbar-brand" href="#">
-                    <img src="./Esports Arena-logos_black_updated.png" alt="" className='d-block m-auto' width={'100rem'} />
+                    <img src="./Esports Arena-logos_white.png" alt="" className='d-block m-auto' width={'120rem'} />
                 </a>
                 <button
                     className="navbar-toggler"
@@ -56,25 +56,25 @@ const Navbar = () => {
                     <span className="navbar-toggler-icon" />
                 </button>
                 <div className="collapse navbar-collapse" id="navbarNavDropdown">
-                    <ul className="navbar-nav mx-3 me-auto mb-2 mb-lg-0">
+                    <ul className="navbar-nav mx-3 me-auto mb-2 mb-lg-0 ">
                         <li className="nav-item">
                             <NavLink className="nav-link" to="/">
-                                Home
+                                <font className='text-white'>Home</font>
                             </NavLink>
                         </li>
                         <li className="nav-item">
                             <NavLink className="nav-link" to="/addtournament">
-                                Add Tournament
+                            <font className='text-white'>Add Tournament</font>
                             </NavLink>
                         </li>
                         <li className="nav-item">
                             <NavLink className="nav-link" to="/listtournament">
-                                List Tournament
+                            <font className='text-white'>List Tournament</font>
                             </NavLink>
                         </li>
                         <li className="nav-item">
                             <NavLink className="nav-link" to="/manageuser">
-                                ManageUser
+                            <font className='text-white'>ManageUser</font>
                             </NavLink>
                         </li>
                     </ul>
@@ -83,7 +83,9 @@ const Navbar = () => {
                     </ul>
                 </div>
             </div>
+        <hr />
         </nav>
+        
 
     )
 }

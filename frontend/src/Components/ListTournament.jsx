@@ -20,33 +20,37 @@ const ListTournament = () => {
 
   const DisplayData = () => {
     return esportsData.map((esports) => (
-        <div className='card mb-4'>
+      <div className='py-3'>
+          <div className='card body1 text-white'>
             <div className='row'>
               <div className='col-md-6'>
-              <img className='w-100' src={'http://localhost:5000/'+esports.logo} alt="" />
+                <img src={'http://localhost:5000/' + esports.logo} alt="" width={"530 rem"} height={"330rem"} />
               </div>
-              
+
               <div className='col-md-6'>
-              <div className='card-body'>
-                    <h1><font className='fw-bold me-3'>Tournament Name: </font><font>{esports.name}</font></h1>
-                    <h2><font className='fw-bold me-3'>Category: </font><font>{esports.category}</font></h2>
-                    <h2><font className='fw-bold me-3'>Team Size: </font><font>{esports.teamsize}</font></h2>
-                    <h4><font className='fw-bold me-3'>Prize:</font><font>{esports.prize}</font></h4>
-                    <h3><font className='fw-bold me-3'>Venue: </font><font>{esports.venue}</font></h3>
-                    <h2><font className='fw-bold me-3'>Description: </font><font>{esports.description}</font></h2>
-                    <h3><font className='fw-bold me-3'>Schedule: </font><font>{esports.schedule}</font></h3>
-                    </div>
+                <div className='card-body'>
+                  <h1><font className='fw-bold me-3'>Tournament Name: </font><font>{esports.name}</font></h1>
+                  <p className=''><font className='fw-bold me-3'>Category: </font><font>{esports.category}</font></p>
+                  <p className=''><font className='fw-bold me-3'>Team Size: </font><font>{esports.teamsize}</font></p>
+                  <p className=''><font className='fw-bold me-3'>Prize:</font><font>{esports.prize}</font></p>
+                  <p className=''><font className='fw-bold me-3'>Venue: </font><font>{esports.venue}</font></p>
+                  <p className=''><font className='fw-bold me-3'>Description: </font><font>{esports.description}</font></p>
+                  <p className=''><font className='fw-bold me-3'>Schedule: </font><font>{esports.schedule}</font></p>
                 </div>
+              </div>
             </div>
+          </div>
         </div>
     ))
-}
+  }
   return (
-    <div className='container'>
-                <div className='row'>
-                    {DisplayData()}
-                </div>
-            </div>
+    <div className='body'>
+      <div className='container'>
+      <div className='row'>
+        {DisplayData()}
+      </div>
+      </div>
+    </div>
   )
 }
 

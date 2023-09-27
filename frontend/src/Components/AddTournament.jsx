@@ -70,7 +70,7 @@ const AddTournament = () => {
     return (
         <div className='body py-5'>
             <div className='container w-50'>
-                <div className='card shadow'>
+                <div className='card shadow body1 text-white p-3'>
                     <div className='card-body'>
                         <form action="" onSubmit={addTournament.handleSubmit} >
                             <label>Tournament Name</label>
@@ -89,7 +89,7 @@ const AddTournament = () => {
                             <input type="file" className='mb-3' onChange={uploadFile}  /><br />
                             <label>Description</label>
                             <textarea rows='2' cols='8' name='description' className='form-control mb-3' onChange={addTournament.handleChange} value={addTournament.values.description} />
-                            <button disabled={addTournament.isSubmitting} className='btn btn-success w-100' type='submit'>
+                            <button disabled={addTournament.isSubmitting} className='btn btn-primary w-100 mt-4' type='submit'>
                                 {
                                     addTournament.isSubmitting ? (
                                         <>
