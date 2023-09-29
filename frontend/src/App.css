@@ -24,3 +24,12 @@
   font-size: medium;
   color: darkgray;
 }
+
+.my-img{
+  height: 250px;
+  object-fit: cover;
+}
+
+font{
+  font-family: Montserrat;
+}

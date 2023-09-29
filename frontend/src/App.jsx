@@ -12,6 +12,7 @@ import UserAuth from './UserAuth';
 import Navbar from './components/Navbar';
 import AddTournament from './components/AddTournament';
 import ListTournament from './components/ListTournament';
+import TournamentDetails from './components/TournamentDetails';
 
 
 function App() {
@@ -30,6 +31,7 @@ function App() {
               <Route element={<SignUp />} path='/signup' />
               <Route element={<AddTournament />} path='/addtournament' />
               <Route element={<ListTournament />} path='/listtournament' />
+              <Route element={<TournamentDetails />} path='/tourdetails/:id' />
               <Route element={<UserAuth> <ManageUser /> </UserAuth> } path='/manageuser' />
               <Route element={<Notfound />} path='/*' />
             </Routes>

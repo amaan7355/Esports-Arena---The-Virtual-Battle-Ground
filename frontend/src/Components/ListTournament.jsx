@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from 'react'
+import { Link } from 'react-router-dom';
 
 const ListTournament = () => {
-
+const categories = ['Arcade', 'War', 'Eliminator', 'Domination', 'Player vs Player', 'Multiplayer Arena'];
   const [esportsData, setEsportsData] = useState([]);
   const fetchEsportsData = async () => {
     const res = await fetch('http://localhost:5000/esport/getall');
@@ -20,35 +21,34 @@ const ListTournament = () => {
 
   const DisplayData = () => {
     return esportsData.map((esports) => (
-      <div className='py-3'>
-          <div className='card body1 text-white'>
-            <div className='row'>
-              <div className='col-md-6'>
-                <img src={'http://localhost:5000/' + esports.logo} alt="" width={"530 rem"} height={"330rem"} />
-              </div>
+      <div className='col-md-4 mb-4'>
+        <div className='card'>
+          <div className='row'>
+            <img src={'http://localhost:5000/' + esports.logo} alt="" className='card-img-top my-img' />
 
-              <div className='col-md-6'>
-                <div className='card-body'>
-                  <h1><font className='fw-bold me-3'>Tournament Name: </font><font>{esports.name}</font></h1>
-                  <p className=''><font className='fw-bold me-3'>Category: </font><font>{esports.category}</font></p>
-                  <p className=''><font className='fw-bold me-3'>Team Size: </font><font>{esports.teamsize}</font></p>
-                  <p className=''><font className='fw-bold me-3'>Prize:</font><font>{esports.prize}</font></p>
-                  <p className=''><font className='fw-bold me-3'>Venue: </font><font>{esports.venue}</font></p>
-                  <p className=''><font className='fw-bold me-3'>Description: </font><font>{esports.description}</font></p>
-                  <p className=''><font className='fw-bold me-3'>Schedule: </font><font>{esports.schedule}</font></p>
-                </div>
-              </div>
+            <div className='card-body'>
+              <h3><font className='fw-bold me-3'><i class="fa-solid fa-ranking-star me-1"></i>Tournament Name: </font><font>{esports.name}</font></h3>
+
+              <h4 className='mt-5'><font className='fw-bold me-3'><i class="fa-solid fa-medal fa-xl me-2"></i>Prize - </font><font>{esports.prize}</font></h4>
+              <h5 className='mt-5'><font className='fw-bold me-3'><i class="fa-solid fa-calendar-days me-3"></i>Schedule</font><font>{esports.schedule}</font></h5>
+              <Link to={'/tourdetails/' + esports._id}>More Details</Link>
             </div>
           </div>
         </div>
+      </div>
     ))
   }
   return (
-    <div className='body'>
-      <div className='container'>
-      <div className='row'>
-        {DisplayData()}
-      </div>
+    <div className='body font'>
+      <div className='container py-4'>
+        <div className=''>
+          <h1 className='text-center text-white fw-bold mb-3'>Browse Tournaments</h1>
+          <input type="text" className='form-control mb-5' />
+
+        </div>
+        <div className='row'>
+          {DisplayData()}
+        </div>
       </div>
     </div>
   )

@@ -42,7 +42,7 @@ const Navbar = () => {
         <nav className="navbar navbar-expand-lg bg-body-territory body">
             <div className="container-fluid">
                 <a className="navbar-brand" href="#">
-                    <img src="./Esports Arena-logos_white.png" alt="" className='d-block m-auto' width={'120rem'} />
+                    <img src="./Esports Arena-logo.jpeg" alt="" className='d-block m-auto' width={'120rem'} />
                 </a>
                 <button
                     className="navbar-toggler"

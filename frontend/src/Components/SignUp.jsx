@@ -87,9 +87,9 @@ const SignUp = () => {
       initial={{ x: '-100%' }}
       animate={{ x: 0 }}
       exit={{ x: '100%' }}
-      transition={{ duration: 0.5, stiffness: 100, type: 'spring', damping: 4 }}
+      // transition={{ duration: 0.5, stiffness: 100, type: 'spring', damping: 4 }}
     >
-    <div className='body'>
+    <div className='body font'>
       <div className="container p-5 w-75">
         <div className="card shadow signup-card">
           <div className=''>
@@ -127,9 +127,9 @@ const SignUp = () => {
                   <p className='text-center signup-tc'><input type="checkbox" className='me-2' /> I accept <span className='text-decoration-underline fw-bold'>terms and conditions</span> & <span className='text-decoration-underline fw-bold'>privacy policy</span></p>
                 </form>
               </div>
-              <div className='col-md-6  bg-dark'>
+              <div className='col-md-6  bg-dark p-5 font'>
                 <img src="./Esports Arena-logos_white.png" className='d-block m-auto w-50' alt="" />
-                <h2 className='w-80 text-center'>Virtual Reality is a new Meta of Gaming. Raise Your Imagination & Never Stop.</h2><br />
+                <h2 className='w-80 text-center font'>Virtual Reality is a new Meta of Gaming. Raise Your Imagination & Never Stop.</h2><br />
                 <div className='align-items-bottom justify-content-bottom'>
                 <p className='mt-5 text-center'>Do you have any questions?<span className='text-decoration-underline fw-bold ms-2'>Contact us</span></p>
                 </div>
