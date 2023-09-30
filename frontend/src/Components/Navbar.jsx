@@ -39,10 +39,10 @@ const Navbar = () => {
         }
     }
     return (
-        <nav className="navbar navbar-expand-lg bg-body-territory body">
+        <nav className="navbar navbar-expand-lg bg-body-territory body1">
             <div className="container-fluid">
                 <a className="navbar-brand" href="#">
-                    <img src="./Esports Arena-logo.jpeg" alt="" className='d-block m-auto' width={'120rem'} />
+                    <img src="./Esport logo2.png" alt="" className='d-block m-auto' width={'180rem'} />
                 </a>
                 <button
                     className="navbar-toggler"

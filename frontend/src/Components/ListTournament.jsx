@@ -1,9 +1,11 @@
 import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom';
+import CategoriesList from './AddTournament';
 
 const ListTournament = () => {
-const categories = ['Arcade', 'War', 'Eliminator', 'Domination', 'Player vs Player', 'Multiplayer Arena'];
   const [esportsData, setEsportsData] = useState([]);
+  const categories = ['Arcade', 'War', 'Eliminator', 'Domination', 'Player vs Player', 'Multiplayer Arena'];
+  
   const fetchEsportsData = async () => {
     const res = await fetch('http://localhost:5000/esport/getall');
     console.log(res.status);
@@ -18,6 +20,13 @@ const categories = ['Arcade', 'War', 'Eliminator', 'Domination', 'Player vs Play
   useEffect(() => {
     fetchEsportsData();
   }, []);
+
+  const filterTournament = (e) => {
+    if (e.target.value === '') return setEsportsData(esportsData)
+    const selTournament = e.target.value;
+    const result = esportsData.filter((esport) => { return esport.categories === selTournament });
+    setEsportsData(result);
+  }
 
   const DisplayData = () => {
     return esportsData.map((esports) => (
@@ -44,7 +53,18 @@ const categories = ['Arcade', 'War', 'Eliminator', 'Domination', 'Player vs Play
         <div className=''>
           <h1 className='text-center text-white fw-bold mb-3'>Browse Tournaments</h1>
           <input type="text" className='form-control mb-5' />
-
+          <div className='row my-4'>
+            <div className='col-md-4'>
+            <select className='form-control' onChange={filterTournament}>
+              <option value="">Select Category</option>
+              {
+                categories.map((b) => (
+                  <option value={b}>{b}</option>
+                ))
+              }
+            </select>
+            </div>
+          </div>
         </div>
         <div className='row'>
           {DisplayData()}
