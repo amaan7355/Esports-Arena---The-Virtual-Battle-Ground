@@ -71,35 +71,47 @@ const AddTournament = () => {
 
 
     return (
-        <div className='body py-5'>
+        <div className='body-AddTournament py-5 vh-100'>
             <div className='container w-50'>
-                <div className='card shadow text-black p-3'>
+                <div className='card shadow text-black p-3' style={{
+                    background: "hsla(0, 0%, 90%, 0.55)",
+                    backdropFilter: "blur(30px)"
+                }}>
                     <div className='card-body'>
+                    <h1 className='text-center fw-bold'>Add Your Tournaments</h1>
                         <form action="" onSubmit={addTournament.handleSubmit} >
-                            <label>Tournament Name</label>
-                            <input type="text" name='name' className='form-control mb-3' onChange={addTournament.handleChange} value={addTournament.values.name} />
-                            <label>Category</label>
-                            <select name="category" id="" className='form-control mb-3' onChange={addTournament.handleChange} value={addTournament.values.category}>
-                                <option value="">Select Category</option>
-                                {
-                                    categories.map((b) => (
-                                        <option value={b}>{b}</option>
-                                    ))
-                                }
-                            </select>
-                            {/* <input type="text" name='category' className='form-control mb-3' onChange={addTournament.handleChange} value={addTournament.values.category} /> */}
-                            <label>Team Size</label>
-                            <input type="text" name='teamsize' className='form-control mb-3' onChange={addTournament.handleChange} value={addTournament.values.teamsize} />
-                            <label>Prize</label>
-                            <input type="text" name='prize' className='form-control mb-3' onChange={addTournament.handleChange} value={addTournament.values.prize} />
-                            <label>Venue</label>
-                            <input type="text" name='venue' className='form-control mb-3' onChange={addTournament.handleChange} value={addTournament.values.venue} />
-                            <label>Event Date & Time: </label>
-                            <input type="datetime-local" name='schedule' className='form-control mb-3' onChange={addTournament.handleChange} value={addTournament.values.schedule} />
-                            <label className='me-5'>Tournament Logo</label>
-                            <input type="file" className='mb-3' onChange={uploadFile} /><br />
-                            <label>Description</label>
-                            <textarea rows='2' cols='8' name='description' className='form-control mb-3' onChange={addTournament.handleChange} value={addTournament.values.description} />
+                            <div className='row'>
+                                <div className='col-md-6'>
+                                    <label className='fw-bold'>Tournament Name</label>
+                                    <input type="text" name='name' className='form-control mb-3' onChange={addTournament.handleChange} value={addTournament.values.name} />
+                                    <label className='fw-bold'>Category</label>
+                                    <select name="category" id="" className='form-control mb-3' onChange={addTournament.handleChange} value={addTournament.values.category}>
+                                        <option value="">Select Category</option>
+                                        {
+                                            categories.map((b) => (
+                                                <option value={b}>{b}</option>
+                                            ))
+                                        }
+                                    </select>
+                                    {/* <input type="text" name='category' className='form-control mb-3' onChange={addTournament.handleChange} value={addTournament.values.category} /> */}
+                                    <label className='fw-bold'>Team Size</label>
+                                    <input type="text" name='teamsize' className='form-control mb-3' onChange={addTournament.handleChange} value={addTournament.values.teamsize} />
+                                    <label className='fw-bold'>Prize</label>
+                                    <input type="text" name='prize' className='form-control mb-3' onChange={addTournament.handleChange} value={addTournament.values.prize} />
+                                </div>
+                                <div className='col-md-6'>
+                                    <label className='fw-bold'>Venue</label>
+                                    <input type="text" name='venue' className='form-control mb-3' onChange={addTournament.handleChange} value={addTournament.values.venue} />
+                                    <label className='fw-bold'>Event Date & Time: </label>
+                                    <input type="datetime-local" name='schedule' className='form-control mb-3' onChange={addTournament.handleChange} value={addTournament.values.schedule} />
+                                    <label className='me-5 fw-bold'>Tournament Logo</label>
+                                    <input type="file" className='mb-3' onChange={uploadFile} /><br />
+                                    <label className='fw-bold'>Description</label>
+                                    <textarea rows='2' cols='8' name='description' className='form-control mb-3' onChange={addTournament.handleChange} value={addTournament.values.description} />
+                                </div>
+                            </div>
+
+
                             <button disabled={addTournament.isSubmitting} className='btn btn-primary w-100 mt-4' type='submit'>
                                 {
                                     addTournament.isSubmitting ? (

@@ -89,9 +89,9 @@ const SignUp = () => {
       exit={{ x: '100%' }}
       // transition={{ duration: 0.5, stiffness: 100, type: 'spring', damping: 4 }}
     >
-    <div className='body font'>
+    <div className='body-signup font'>
       <div className="container p-5 w-75">
-        <div className="card shadow signup-card">
+        <div className="card shadow bg-dark">
           <div className=''>
             <div className='row text-white'>
               <div className='col-md-6  p-5'>
@@ -102,17 +102,17 @@ const SignUp = () => {
                   Full Name<span style={{ color: 'red' }}> <sup>*</sup></span>
                   </label>
                   <span style={{ fontSize: "1em", color: 'red', marginLeft: 20 }}>{signUpform.touched.name && signUpform.errors.name}</span>
-                  <input type="text" name='name' className="signup-input text-white mb-4 " placeholder="Your Name" onChange={signUpform.handleChange} value={signUpform.values.name} />
+                  <input type="text" name='name' className="form-control  mb-4 " placeholder="Your Name" onChange={signUpform.handleChange} value={signUpform.values.name} />
                   <label className='form-label'>
                   Email <span style={{ color: 'red' }}> <sup>*</sup></span>
                   </label>
                   <span style={{ fontSize: "1em", color: 'red', marginLeft: 20 }}>{signUpform.touched.email && signUpform.errors.email}</span>
-                  <input type="email" name='email' className="signup-input text-white mb-4 " placeholder="Your Email"
+                  <input type="email" name='email' className="form-control mb-4 " placeholder="Your Email"
                     onChange={signUpform.handleChange} value={signUpform.values.email} />
                   <label className='form-label'>
                   Password <span style={{ color: 'red' }}> <sup>*</sup></span>
                   </label>
-                  <input type="password" name='password' className="signup-input text-white mb-4" placeholder="Your Password" onChange={signUpform.handleChange} value={signUpform.values.password} />
+                  <input type="password" name='password' className="form-control   mb-4" placeholder="Your Password" onChange={signUpform.handleChange} value={signUpform.values.password} />
                   <input type="file" className='my-3' onChange={uploadFile} />
                   <br />
                   <button disabled={signUpform.isSubmitting} className="btn btn-light w-100 my-4" type='submit'>
@@ -127,7 +127,7 @@ const SignUp = () => {
                   <p className='text-center signup-tc'><input type="checkbox" className='me-2' /> I accept <span className='text-decoration-underline fw-bold'>terms and conditions</span> & <span className='text-decoration-underline fw-bold'>privacy policy</span></p>
                 </form>
               </div>
-              <div className='col-md-6  bg-dark p-5 font'>
+              <div className='col-md-6 p-5 font signup-card'>
                 <img src="./Esports Arena-logos_white.png" className='d-block m-auto w-50' alt="" />
                 <h2 className='w-80 text-center font'>Virtual Reality is a new Meta of Gaming. Raise Your Imagination & Never Stop.</h2><br />
                 <div className='align-items-bottom justify-content-bottom'>
