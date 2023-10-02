@@ -74,7 +74,7 @@ const AddTournament = () => {
         <div className='body-AddTournament py-5 vh-100'>
             <div className='container w-50'>
                 <div className='card shadow text-black p-3' style={{
-                    background: "hsla(0, 0%, 90%, 0.55)",
+                    background: "hsla(0, 0%, 100%, 0.77)",
                     backdropFilter: "blur(30px)"
                 }}>
                     <div className='card-body'>

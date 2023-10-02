@@ -91,9 +91,12 @@ const SignUp = () => {
     >
     <div className='body-signup font'>
       <div className="container p-5 w-75">
-        <div className="card shadow bg-dark">
+        <div className="card shadow"  style={{
+                    background: "hsla(0, 0%, 100%, 0.77)",
+                    backdropFilter: "blur(30px)"
+                }}>
           <div className=''>
-            <div className='row text-white'>
+            <div className='row'>
               <div className='col-md-6  p-5'>
                 <form onSubmit={signUpform.handleSubmit} className=''>
                   <h3 className="text-center">Sign up to </h3>
@@ -115,7 +118,7 @@ const SignUp = () => {
                   <input type="password" name='password' className="form-control   mb-4" placeholder="Your Password" onChange={signUpform.handleChange} value={signUpform.values.password} />
                   <input type="file" className='my-3' onChange={uploadFile} />
                   <br />
-                  <button disabled={signUpform.isSubmitting} className="btn btn-light w-100 my-4" type='submit'>
+                  <button disabled={signUpform.isSubmitting} className="btn btn-dark w-100 my-4" type='submit'>
                     {
                       signUpform.isSubmitting ? (
                         <>
@@ -127,8 +130,8 @@ const SignUp = () => {
                   <p className='text-center signup-tc'><input type="checkbox" className='me-2' /> I accept <span className='text-decoration-underline fw-bold'>terms and conditions</span> & <span className='text-decoration-underline fw-bold'>privacy policy</span></p>
                 </form>
               </div>
-              <div className='col-md-6 p-5 font signup-card'>
-                <img src="./Esports Arena-logos_white.png" className='d-block m-auto w-50' alt="" />
+              <div className='col-md-6 p-5 font'>
+                <img src="./Esports Arena-logos_black.png" className='d-block m-auto w-50' alt="" />
                 <h2 className='w-80 text-center font'>Virtual Reality is a new Meta of Gaming. Raise Your Imagination & Never Stop.</h2><br />
                 <div className='align-items-bottom justify-content-bottom'>
                 <p className='mt-5 text-center'>Do you have any questions?<span className='text-decoration-underline fw-bold ms-2'>Contact us</span></p>

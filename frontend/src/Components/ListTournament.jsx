@@ -59,7 +59,7 @@ const ListTournament = () => {
             <i class="fa-solid fa-magnifying-glass fa-xl icon"></i>
             <div>
               <input className="input-field" type="text" />
-              <button className='btn btn-outline-light btn-lg ms-2'>Search</button>
+              <button className='btn btn-outline-light btn-lg ms-2 mb-1'>Search</button>
             </div>
 
           </div>
