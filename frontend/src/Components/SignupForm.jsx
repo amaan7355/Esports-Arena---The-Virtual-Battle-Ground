@@ -1,20 +1,17 @@
-import { useFormik } from 'formik';
 import React, { useState } from 'react';
-import { Route, Router, useNavigate } from 'react-router-dom';
+import {motion} from 'framer-motion';
+import { useNavigate } from 'react-router-dom';
+import { useFormik } from 'formik';
 import Swal from 'sweetalert2';
-import { motion } from 'framer-motion';
 import * as Yup from 'yup';
-import SignupForm from './SignupForm';
-import LoginForm from './LoginForm';
 
 const SignupSchema = Yup.object().shape({
-  name: Yup.string().min(5, 'min 5 characters req.').required('Name is required'),
-  email: Yup.string().email('Invalid email').required('Required'),
-});
+    name: Yup.string().min(5, 'min 5 characters req.').required('Name is required'),
+    email: Yup.string().email('Invalid email').required('Required'),
+  });
 
-const SignUp = () => {
-
-  const navigate = useNavigate();
+const SignupForm = () => {
+    const navigate = useNavigate();
 
   const [signupOpen, setSignupOpen] = useState(true);
 
@@ -68,40 +65,28 @@ const SignUp = () => {
     },
     validationSchema: SignupSchema,
   });
-
-  const uploadFile = async (e) => {
-    if (!e.target.files) return;
-
-    const file = e.target.files[0];
-    console.log(file.name);
-    setSelFile(file.name);
-
-    const fd = new FormData();
-    fd.append('myfile', file);
-
-    const res = await fetch('http://localhost:5000/utils/uploadfile', {
-      method: 'POST',
-      body: fd
-    });
-    console.log(res.status);
-  }
+    const uploadFile = async (e) => {
+        if (!e.target.files) return;
+    
+        const file = e.target.files[0];
+        console.log(file.name);
+        setSelFile(file.name);
+    
+        const fd = new FormData();
+        fd.append('myfile', file);
+    
+        const res = await fetch('http://localhost:5000/utils/uploadfile', {
+          method: 'POST',
+          body: fd
+        });
+        console.log(res.status);
+      }
   return (
     <motion.div
-      initial={{ x: '-100%' }}
-      animate={{ x: 0 }}
-      exit={{ x: '100%' }}
-      // transition={{ duration: 0.5, stiffness: 100, type: 'spring', damping: 4 }}
+        initial={{y: '100%'}}
+        animate={{y:0}}
     >
-    <div className='body-signup font'>
-      <div className="container p-5 w-75">
-        <div className="card shadow"  style={{
-                    background: "hsla(0, 0%, 100%, 0.77)",
-                    backdropFilter: "blur(30px)"
-                }}>
-          <div className=''>
-            <div className='row'>
-              <div className='col-md-6  p-5'>
-                {/* <form onSubmit={signUpform.handleSubmit} className=''>
+        <form onSubmit={signUpform.handleSubmit} className=''>
                   <h3 className="text-center">Sign up to </h3>
                   <h2 className='text-center fw-bold'>E-Sports Arena</h2><hr />
                   <label className='form-label'>
@@ -131,28 +116,9 @@ const SignUp = () => {
                     }
                   </button>
                   <p className='text-center signup-tc'><input type="checkbox" className='me-2' /> I accept <span className='text-decoration-underline fw-bold'>terms and conditions</span> & <span className='text-decoration-underline fw-bold'>privacy policy</span></p>
-                </form> */}
-
-                {
-                  signupOpen ? <SignupForm/> : <LoginForm/>
-                }
-                <button onClick={e => {setSignupOpen(!signupOpen)}}>toggle</button>
-              </div>
-              <div className='col-md-6 p-5 font'>
-                <img src="./Esports Arena-logos_black.png" className='d-block m-auto w-50' alt="" />
-                <h2 className='w-80 text-center font'>Virtual Reality is a new Meta of Gaming. Raise Your Imagination & Never Stop.</h2><br />
-                <div className='align-items-bottom justify-content-bottom'>
-                <p className='mt-5 text-center'>Do you have any questions?<span className='text-decoration-underline fw-bold ms-2'>Contact us</span></p>
-                </div>
-                
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+                </form>
     </motion.div>
   )
 }
 
-export default SignUp;
+export default SignupForm
