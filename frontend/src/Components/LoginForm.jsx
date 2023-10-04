@@ -66,7 +66,7 @@ const LoginForm = ({ setSignupOpen }) => {
                 <div className="card shadow">
                     <div className="card-body"> */}
             <form onSubmit={loginForm.handleSubmit}>
-                <h3 className="text-center">Sign in to </h3>
+                <h3 className="text-center mt-3">Sign in to </h3>
                 <h2 className='text-center fw-bold'>E-Sports Arena</h2><hr />
 
                 <label>Email</label>
@@ -93,7 +93,7 @@ const LoginForm = ({ setSignupOpen }) => {
                     <font className=''>Already Registered?</font>  <a href="" onClick={(e) => {
                         e.preventDefault();
                         setSignupOpen(true);
-                    }}> Signup</a>
+                    }}>Signin</a>
                 </p>
             </form>
         </motion.div>

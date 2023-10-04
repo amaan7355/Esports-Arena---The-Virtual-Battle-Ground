@@ -58,24 +58,3 @@ font{
   font-family: Montserrat;
 }
 
-.input-icons i {
-  position: absolute;
-}
-
-.input-icons {
-  width: 100%;
-  margin-bottom: 10px;
-}
-
-.icon {
-  padding: 20px;
-  min-width: 40px;
-}
-
-.input-field {
-  width: 85%;
-  padding: 10px;
-  text-align: center;
-  /* margin-left: 100px; */
-  border: none;
-}

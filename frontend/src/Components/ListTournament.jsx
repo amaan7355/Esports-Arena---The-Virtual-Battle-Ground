@@ -38,10 +38,10 @@ const ListTournament = () => {
             <img src={'http://localhost:5000/' + esports.logo} alt="" className='card-img-top my-img' />
 
             <div className='card-body p-4'>
-              <h5><font className='fw-bold me-3'><i class="fa-solid fa-ranking-star me-1"></i>Tournament: </font><font>{esports.name}</font></h5>
+              <h5><font className='fw-bold me-3'><i class="fa-solid fa-ranking-star me-1"></i>Tournament : </font><font>{esports.name}</font></h5>
 
-              <h5 className='mt-4'><font className='fw-bold me-3'><i class="fa-solid fa-medal fa-lg me-2"></i>Prize - </font><font>{esports.prize}</font></h5>
-              <h6 className='mt-4'><font className='fw-bold me-3'><i class="fa-solid fa-calendar-days me-3"></i>Schedule</font><font>{new Date(esports.schedule).toLocaleDateString()} {new Date(esports.schedule).toLocaleTimeString()}</font></h6>
+              <h5 className='mt-4'><font className='fw-bold me-3'><i class="fa-solid fa-medal fa-lg me-2"></i>Prize : </font><font><i class="fa-solid fa-dollar-sign me-1"></i>{esports.prize}</font></h5>
+              <h6 className='mt-4'><font className='fw-bold me-3'><i class="fa-solid fa-calendar-days me-3"></i>Schedule :</font><font>{new Date(esports.schedule).toLocaleDateString()} {new Date(esports.schedule).toLocaleTimeString()}</font></h6>
               <Link to={'/tourdetails/' + esports._id}> <button className='btn btn-dark mt-2 w-100'>More Details</button> </Link>
             </div>
           </div>
@@ -54,16 +54,24 @@ const ListTournament = () => {
       <div className='container py-4'>
         <div className=''>
           <h1 className='text-center text-white fw-bold mb-3'>Browse Tournaments</h1>
-          {/* <div style={{ maxWidth: 400, margin: "auto" }}> */}
-          <div className="input-icons">
-            <i class="fa-solid fa-magnifying-glass fa-xl icon"></i>
-            <div>
-              <input className="input-field" type="text" />
-              <button className='btn btn-outline-light btn-lg ms-2 mb-1'>Search</button>
-            </div>
-
+          <div className="input-group">
+            <input
+              type="text"
+              className="form-control"
+              placeholder="Search..."
+              aria-label="Recipient's username"
+              aria-describedby="button-addon2"
+            />
+            <button
+              className="btn btn-lg btn-outline-light ms-2"
+              type="button"
+              id="button-addon2"
+            >Search 
+              {/* <i class="fa-solid fa-magnifying-glass ms-2"></i> */}
+              
+            </button>
           </div>
-          {/* </div> */}
+
 
 
           {/* <input type="text" className='form-control mb-5'  /> */}

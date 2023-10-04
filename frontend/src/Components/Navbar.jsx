@@ -67,11 +67,11 @@ const Navbar = () => {
                             <font className='text-white'>List Tournament</font>
                             </NavLink>
                         </li>
-                        <li className="nav-item">
+                        {/* <li className="nav-item">
                             <NavLink className="nav-link" to="/manageuser">
                             <font className='text-white'>ManageUser</font>
                             </NavLink>
-                        </li>
+                        </li> */}
                     </ul>
                     <ul className='navbar-nav ms-auto mb-2 mb-lg-0'>
                         {displayUserOption()}

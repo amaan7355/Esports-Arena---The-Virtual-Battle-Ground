@@ -100,7 +100,7 @@ const SignUp = () => {
                 }}>
           <div className=''>
             <div className='row'>
-              <div className='col-md-6 p-5'>
+              <div className='col-md-6 px-5'>
                 {/* <form onSubmit={signUpform.handleSubmit} className=''>
                   <h3 className="text-center">Sign up to </h3>
                   <h2 className='text-center fw-bold'>E-Sports Arena</h2><hr />
