@@ -71,9 +71,9 @@ const AddTournament = () => {
 
 
     return (
-        <div className='body-AddTournament py-5 vh-100'>
-            <div className='container w-50'>
-                <div className='card shadow text-black p-3' style={{
+        <div className='body-AddTournament py-5'>
+            <div className='container col-lg-6'>
+                <div className='card shadow text-black p-3 mt-5' style={{
                     background: "hsla(0, 0%, 100%, 0.77)",
                     backdropFilter: "blur(30px)"
                 }}>

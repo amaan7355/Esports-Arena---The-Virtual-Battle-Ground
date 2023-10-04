@@ -38,11 +38,11 @@ const ListTournament = () => {
             <img src={'http://localhost:5000/' + esports.logo} alt="" className='card-img-top my-img' />
 
             <div className='card-body p-4'>
-              <h4><font className='fw-bold me-3'><i class="fa-solid fa-ranking-star me-1"></i>Tournament Name: </font><font>{esports.name}</font></h4>
+              <h5><font className='fw-bold me-3'><i class="fa-solid fa-ranking-star me-1"></i>Tournament: </font><font>{esports.name}</font></h5>
 
-              <h4 className='mt-4'><font className='fw-bold me-3'><i class="fa-solid fa-medal fa-xl me-2"></i>Prize - </font><font>{esports.prize}</font></h4>
-              <h5 className='mt-4'><font className='fw-bold me-3'><i class="fa-solid fa-calendar-days me-3"></i>Schedule</font><font>{esports.schedule}</font></h5>
-              <Link to={'/tourdetails/' + esports._id}>More Details</Link>
+              <h5 className='mt-4'><font className='fw-bold me-3'><i class="fa-solid fa-medal fa-lg me-2"></i>Prize - </font><font>{esports.prize}</font></h5>
+              <h6 className='mt-4'><font className='fw-bold me-3'><i class="fa-solid fa-calendar-days me-3"></i>Schedule</font><font>{new Date(esports.schedule).toLocaleDateString()} {new Date(esports.schedule).toLocaleTimeString()}</font></h6>
+              <Link to={'/tourdetails/' + esports._id}> <button className='btn btn-dark mt-2 w-100'>More Details</button> </Link>
             </div>
           </div>
         </div>
@@ -80,7 +80,7 @@ const ListTournament = () => {
             </div>
           </div>
         </div>
-        <div className='row'>
+        <div className='row mt-5 p-3'>
           {DisplayData()}
         </div>
       </div>

@@ -92,15 +92,15 @@ const SignUp = () => {
       exit={{ x: '100%' }}
       // transition={{ duration: 0.5, stiffness: 100, type: 'spring', damping: 4 }}
     >
-    <div className='body-signup font'>
-      <div className="container p-5 w-75">
+    <div className='body-signup font py-5'>
+      <div className="container col-lg-8">
         <div className="card shadow"  style={{
                     background: "hsla(0, 0%, 100%, 0.77)",
                     backdropFilter: "blur(30px)"
                 }}>
           <div className=''>
             <div className='row'>
-              <div className='col-md-6  p-5'>
+              <div className='col-md-6 p-5'>
                 {/* <form onSubmit={signUpform.handleSubmit} className=''>
                   <h3 className="text-center">Sign up to </h3>
                   <h2 className='text-center fw-bold'>E-Sports Arena</h2><hr />
@@ -134,10 +134,11 @@ const SignUp = () => {
                 </form> */}
 
                 {
-                  signupOpen ? <SignupForm/> : <LoginForm/>
+                  signupOpen ? <SignupForm setSignupOpen={setSignupOpen}/> : <LoginForm setSignupOpen={setSignupOpen}/>
                 }
-                <button onClick={e => {setSignupOpen(!signupOpen)}}>toggle</button>
+                {/* <a className='btn text-decoration-underline fw-bold' onClick={e => {setSignupOpen(!signupOpen)}} style={{border: "none"}}>toggle</a> */}
               </div>
+              {/* <div style={{borderLeft: "1px solid gray", height: "100%", position: "absolute", left: "50%"}}></div> */}
               <div className='col-md-6 p-5 font'>
                 <img src="./Esports Arena-logos_black.png" className='d-block m-auto w-50' alt="" />
                 <h2 className='w-80 text-center font'>Virtual Reality is a new Meta of Gaming. Raise Your Imagination & Never Stop.</h2><br />

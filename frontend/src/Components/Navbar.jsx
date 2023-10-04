@@ -4,7 +4,7 @@ import UseAppContext from '../AppContext';
 
 const Navbar = () => {
 
-    const { loggedIn, logout } = UseAppContext();
+    const { loggedIn, logout, avatar } = UseAppContext();
 
     const [currentUser, setCurrentUser] = useState(
         JSON.parse(sessionStorage.getItem('user'))
@@ -16,7 +16,7 @@ const Navbar = () => {
             <>
             <li className='nav-item'><button className='btn btn-danger' onClick={logout}>Logout</button></li>
             <li>
-                <img height={50} className='rounded-circle' src={"http://localhost:5000/" +currentUser.avatar} alt="avatar" />
+                <img height={50} className='rounded-circle' src={"http://localhost:5000/" +avatar} alt="avatar" />
             </li>
             </>
             )
@@ -24,11 +24,6 @@ const Navbar = () => {
         else{
             return (
             <>
-                <li className="nav-item">
-                    <NavLink className="nav-link" to="/login">
-                        <font className='text-white'>Sign in</font>
-                    </NavLink>
-                </li>
                 <li className="nav-item">
                     <NavLink className="nav-link" to="/signup">
                     <font className='text-white'>Sign up</font>
@@ -53,7 +48,7 @@ const Navbar = () => {
                     aria-expanded="false"
                     aria-label="Toggle navigation"
                 >
-                    <span className="navbar-toggler-icon" />
+                    <i class="fa-solid fa-bars text-white"></i>
                 </button>
                 <div className="collapse navbar-collapse" id="navbarNavDropdown">
                     <ul className="navbar-nav mx-3 me-auto mb-2 mb-lg-0 ">

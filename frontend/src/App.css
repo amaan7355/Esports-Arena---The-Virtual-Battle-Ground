@@ -6,14 +6,14 @@
 
 .body-ListTournament{
   background-image: url("https://media.extron.com/public/landing/content/esports/esports-hero.jpg");
-  background-size: cover;
-  height: 100%;
+  background-size: cover; 
+  min-height: 100vh;
 }
 
 .body-AddTournament{
   background-image: url("https://media.extron.com/public/landing/content/esports/esports-hero.jpg");
   background-size: cover;
-  height: 100%;
+  min-height: 100vh;
 }
 
 .body-home{
