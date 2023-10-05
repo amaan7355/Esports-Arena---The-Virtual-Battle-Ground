@@ -5,42 +5,55 @@ const Home = () => {
     <div className='body-home'>
       <div id="preview" className="preview">
         <div style={{ display: "none" }} />
-        <div>
-          <div
-            data-draggable="true"
-            className=""
-            style={{ position: "relative" }}
-            draggable="false"
-          >
-            {/**/}
-            {/**/}
-            <section draggable="false" className="container pt-5" data-v-271253ee="">
-              <section className="mb-10 background-radial-gradient">
-                <style
-                  dangerouslySetInnerHTML={{
-                    __html:
-                      "\n              .background-radial-gradient {\n                background-color: hsl(127, 52%, 37%);\n                background-image: radial-gradient(650px circle at 0% 0%, hsl(218, 41%, 35%) 15%, hsl(218, 41%, 30%) 35%, hsl(218, 41%, 20%) 75%, hsl(218, 41%, 19%) 80%, transparent 100%), radial-gradient(1250px circle at 100% 100%, hsl(218, 41%, 45%) 15%, hsl(218, 41%, 30%) 35%, hsl(218, 41%, 20%) 75%, hsl(218, 41%, 19%) 80%, transparent 100%);\n              }\n            "
-                  }}
-                />
-                <div className="container px-4 py-5 px-md-5 text-center text-lg-start">
-                  <div className="row gx-lg-5 align-items-center my-5 my-lg-0">
-                    <div className="col-lg-6 mb-5 mb-lg-0">
-                      <h1
-                        className="mb-5 display-3 fw-bold ls-tight"
-                        style={{ color: "hsl(218, 81%, 95%)" }}
-                      >
-                        {" "}
-                        <span>Are you ready</span> <br />{" "}
-                        <span style={{ color: "hsl(218, 81%, 75%)" }}>
-                          for an adventure?
-                        </span>{" "}
-                      </h1>
-                      <p className="text-white lead mb-xl-0">
-                        Dive into the heart of competitive gaming with our esports tournaments! Join thousands of passionate gamers from around the world in the ultimate battle for glory. Whether you're a seasoned pro or a casual player, there's a tournament waiting for you.
-                      </p>
-                    </div>
-                    <div className="col-lg-6">
-                      <div className="ratio ratio-16x9">
+        <div data-draggable="true" className="" style={{ position: "relative" }}>
+        {/**/}
+        {/**/}
+        <section
+          draggable="false"
+          className="overflow-hidden pt-0"
+          data-v-271253ee=""
+        >
+          <section className="container mt-5 mb-10 background-radial-gradient">
+            <style
+              dangerouslySetInnerHTML={{
+                __html:
+                  "\n              .background-radial-gradient {\n                background-color: hsl(218, 41%, 15%);\n                background-image: radial-gradient(650px circle at 0% 0%, hsl(218, 41%, 35%) 15%, hsl(218, 41%, 30%) 35%, hsl(218, 41%, 20%) 75%, hsl(218, 41%, 19%) 80%, transparent 100%), radial-gradient(1250px circle at 100% 100%, hsl(218, 41%, 45%) 15%, hsl(218, 41%, 30%) 35%, hsl(218, 41%, 20%) 75%, hsl(218, 41%, 19%) 80%, transparent 100%);\n              }\n            "
+              }}
+            />
+            <div className="container px-4 py-5 px-md-5 text-center text-lg-start">
+              <div className="row gx-lg-5 align-items-center">
+                <div className="col-lg-6 mb-5 mb-lg-0">
+                  <h1
+                    className="my-5 display-3 fw-bold ls-tight"
+                    style={{ color: "hsl(218, 81%, 95%)" }}
+                  >
+                    {" "}
+                    <span>"Enter the Arena: </span> <br />{" "}
+                    <span style={{ color: "hsl(218, 81%, 75%)" }}>
+                      Your Path to Glory Begins Here!"
+                    </span>{" "}
+                  </h1>{" "}
+                  <a
+                    className="btn btn-light btn-lg py-3 px-5 mb-2 mb-md-0 me-md-2"
+                    data-ripple-color="primary"
+                    href="#"
+                    role="button"
+                    aria-controls=""
+                  >
+                    Get started
+                  </a>{" "}
+                  <a
+                    className="btn btn-outline-light btn-lg py-3 px-5"
+                    // style={{ backgroundColor: "hsl(218, 100%, 50%)", border: "none" }}
+                    href="#"
+                    role="button"
+                    aria-controls="#picker-editor"
+                  >
+                    Browse
+                  </a>
+                </div>
+                <div className="col-lg-6 mb-5 mb-lg-0">
+                  <div className="ratio ratio-16x9">
                         {" "}
                         <iframe
                           width={930}
@@ -54,14 +67,14 @@ const Home = () => {
                         />
                         {" "}
                       </div>
-                    </div>
-                  </div>
                 </div>
-              </section>
-            </section>
-            {/**/}
-          </div>
-        </div>
+              </div>
+            </div>
+          </section>
+        </section>
+        {/**/}
+      </div>
+        
 
 
         <div data-draggable="true" className="" style={{ position: "relative" }}>
@@ -138,75 +151,64 @@ const Home = () => {
           {/**/}
         </div>
       </div>
-
-      <div data-draggable="true" className="" style={{ position: "relative" }}>
-        {/**/}
-        {/**/}
-        <section
-          draggable="false"
-          className="overflow-hidden pt-0"
-          data-v-271253ee=""
-        >
-          <section className="mb-10 background-radial-gradient">
-            <style
-              dangerouslySetInnerHTML={{
-                __html:
-                  "\n              .background-radial-gradient {\n                background-color: hsl(218, 41%, 15%);\n                background-image: radial-gradient(650px circle at 0% 0%, hsl(218, 41%, 35%) 15%, hsl(218, 41%, 30%) 35%, hsl(218, 41%, 20%) 75%, hsl(218, 41%, 19%) 80%, transparent 100%), radial-gradient(1250px circle at 100% 100%, hsl(218, 41%, 45%) 15%, hsl(218, 41%, 30%) 35%, hsl(218, 41%, 20%) 75%, hsl(218, 41%, 19%) 80%, transparent 100%);\n              }\n            "
-              }}
-            />
-            <div className="container px-4 py-5 px-md-5 text-center text-lg-start">
-              <div className="row gx-lg-5 align-items-center">
-                <div className="col-lg-6 mb-5 mb-lg-0">
-                  <h1
-                    className="my-5 display-3 fw-bold ls-tight"
-                    style={{ color: "hsl(218, 81%, 95%)" }}
-                  >
-                    {" "}
-                    <span>"Enter the Arena: </span> <br />{" "}
-                    <span style={{ color: "hsl(218, 81%, 75%)" }}>
-                      Your Path to Glory Begins Here!"
-                    </span>{" "}
-                  </h1>{" "}
-                  <a
-                    className="btn btn-light btn-lg py-3 px-5 mb-2 mb-md-0 me-md-2"
-                    data-ripple-color="primary"
-                    href="#"
-                    role="button"
-                    aria-controls=""
-                  >
-                    Get started
-                  </a>{" "}
-                  <a
-                    className="btn btn-link btn-lg py-3 px-5 text-white"
-                    style={{ backgroundColor: "transparent" }}
-                    href="#"
-                    role="button"
-                    aria-controls="#picker-editor"
-                  >
-                    Learn more
-                  </a>
-                </div>
-                <div className="col-lg-6 mb-5 mb-lg-0">
-                  {" "}
+      <div>
+          <div
+            data-draggable="true"
+            className=""
+            style={{ position: "relative" }}
+            draggable="false"
+          >
+            {/**/}
+            {/**/}
+            <section draggable="false" className="container pt-5" data-v-271253ee="">
+              <section className="mb-10 background-radial-gradient">
+                <style
+                  dangerouslySetInnerHTML={{
+                    __html:
+                      "\n              .background-radial-gradient {\n                background-color: hsl(127, 52%, 37%);\n                background-image: radial-gradient(650px circle at 0% 0%, hsl(218, 41%, 35%) 15%, hsl(218, 41%, 30%) 35%, hsl(218, 41%, 20%) 75%, hsl(218, 41%, 19%) 80%, transparent 100%), radial-gradient(1250px circle at 100% 100%, hsl(218, 41%, 45%) 15%, hsl(218, 41%, 30%) 35%, hsl(218, 41%, 20%) 75%, hsl(218, 41%, 19%) 80%, transparent 100%);\n              }\n            "
+                  }}
+                />
+                <div className="container px-4 py-5 px-md-5 text-center text-lg-start">
+                  <div className="row gx-lg-5 align-items-center my-5 my-lg-0">
+                    <div className="col-lg-6 mb-5 mb-lg-0">
+                      <h1
+                        className="mb-5 display-3 fw-bold ls-tight"
+                        style={{ color: "hsl(218, 81%, 95%)" }}
+                      >
+                        {" "}
+                        <span>Are you ready</span> <br />{" "}
+                        <span style={{ color: "hsl(218, 81%, 75%)" }}>
+                          for an adventure?
+                        </span>{" "}
+                      </h1>
+                      <p className="text-white lead mb-xl-0">
+                        Dive into the heart of competitive gaming with our esports tournaments! Join thousands of passionate gamers from around the world in the ultimate battle for glory. Whether you're a seasoned pro or a casual player, there's a tournament waiting for you.
+                      </p>
+                    </div>
+                    <div className="col-lg-6">
+                      {" "}
                   <img
                     src="https://www.dailygame.net/wp-content/uploads/2022/12/esports.jpg"
                     className="w-100 rounded-4 shadow-5"
                     alt=""
                     aria-controls="#picker-editor"
                   />{" "}
+                    </div>
+                  </div>
                 </div>
-              </div>
-            </div>
-          </section>
-        </section>
-        {/**/}
-      </div>
+              </section>
+            </section>
+            {/**/}
+          </div>
+        </div>
+
+      
 
 
       <div data-draggable="true" className="" style={{ position: "relative" }}>
         {/**/}
         {/**/}
-        <section draggable="false" className="pt-5" data-v-271253ee="">
+        <section draggable="false" className="container pt-5" data-v-271253ee="">
           <section className="mb-10 text-center" style={{
             background: "hsla(0, 0%, 100%, 0.80)",
             backdropFilter: "blur(30px)"
@@ -359,7 +361,7 @@ const Home = () => {
       <div data-draggable="true" className="text-white" style={{ position: "relative" }}>
         {/**/}
         {/**/}
-        <section draggable="false" className="pt-5" data-v-271253ee="" >
+        <section draggable="false" className="container pt-5" data-v-271253ee="" >
           <section className="mb-10 text-center background-radial-gradient">
             <style
               dangerouslySetInnerHTML={{
@@ -375,80 +377,150 @@ const Home = () => {
                   <span className="me-2">Why is it so</span>
                   <span style={{ color: "hsl(218, 81%, 75%)" }}>great?{" "} </span>
 
-              </h2>
-              {/* <p className=" mb-5">
+                </h2>
+                {/* <p className=" mb-5">
                 Minus fuga aliquid vero facere ducimus quos, quisquam nemo?
                 Molestias ullam provident vitae error aliquam dolorum temporibus?
                 Doloremque, quasi
               </p> */}
+              </div>
             </div>
-          </div>
-          <div className="row gx-lg-5">
-            <div className="col-lg-3 col-md-6 mb-5 mb-lg-0">
-              <div className="p-3 bg-primary rounded-circle shadow-2-strong d-inline-block mb-4">
+            <div className="row gx-lg-5 pb-4">
+              <div className="col-lg-3 col-md-6 mb-5 mb-lg-0">
+                <div className="p-3 bg-primary rounded-circle shadow-2-strong d-inline-block mb-4">
+                  {" "}
+                  <i
+                    className="fas fa-headset fa-lg text-white fa-fw"
+                    aria-controls="#picker-editor"
+                  />{" "}
+                </div>
+                <h5 className="fw-bold mb-3">Support 24/7</h5>
+                <p className=" mb-0">
+                  Laudantium totam quas cumque pariatur at doloremque hic quos quia
+                  eius. Reiciendis optio minus mollitia rerum labore
+                </p>
+              </div>
+              <div className="col-lg-3 col-md-6 mb-5 mb-lg-0">
+                <div className="p-3 bg-primary rounded-circle shadow-2-strong d-inline-block mb-4">
+                  {" "}
+                  <i
+                    className="fas fa-shield-alt fa-lg text-white fa-fw"
+                    aria-controls="#picker-editor"
+                  />{" "}
+                </div>
+                <h5 className="fw-bold mb-3">Safe and solid</h5>
+                <p className=" mb-0">
+                  Eum nostrum fugit numquam, voluptates veniam neque quibusdam ullam
+                  aspernatur odio soluta, quisquam dolore animi
+                </p>
+              </div>
+              <div className="col-lg-3 col-md-6 mb-5 mb-md-0">
+                <div className="p-3 bg-primary rounded-circle shadow-2-strong d-inline-block mb-4">
+                  {" "}
+                  <i
+                    className="fas fa-shipping-fast fa-lg text-white fa-fw"
+                    aria-controls="#picker-editor"
+                  />{" "}
+                </div>
+                <h5 className="fw-bold mb-3">Extremely fast</h5>
+                <p className=" mb-0">
+                  Enim cupiditate, minus nulla dolor cumque iure eveniet facere ullam
+                  beatae hic voluptatibus dolores exercitationem
+                </p>
+              </div>
+              <div className="col-lg-3 col-md-6 mb-5 mb-md-0">
+                <div className="p-3 bg-primary rounded-circle shadow-2-strong d-inline-block mb-4">
+                  {" "}
+                  <i
+                    className="fas fa-chart-pie fa-lg text-white fa-fw"
+                    aria-controls="#picker-editor"
+                  />{" "}
+                </div>
+                <h5 className="fw-bold mb-3">Live analytics</h5>
+                <p className=" mb-0">
+                  Illum doloremque ea, blanditiis sed dolor laborum praesentium maxime
+                  sint, consectetur atque ipsum ab adipisci
+                </p>
+              </div>
+
+            </div>
+          </section>
+        </section>
+        {/**/}
+      </div>
+
+      <div data-draggable="true" className="mt-5" style={{ position: "relative" }}>
+        {/**/}
+        {/**/}
+        <section draggable="false" className="" data-v-271253ee="" style={{
+          background: "hsla(0, 0%, 100%, 0.80)",
+          backdropFilter: "blur(30px)"
+        }}>
+          <section className="mb-10 text-center">
+            <div className="p-5">
+              <h2 className="mb-5 display-5 fw-bold ls-tight">
                 {" "}
+                <span>Let's stay in touch</span> <br />{" "}
+                <span className="text-primary">Join our social media</span>{" "}
+              </h2>{" "}
+              {/* Facebook */}{" "}
+              <a
+                className="btn btn-primary btn-lg me-md-2 mb-3"
+                style={{ backgroundColor: "#3b5998" }}
+                href="#!"
+                role="button"
+              >
                 <i
-                  className="fas fa-headset fa-lg text-white fa-fw"
+                  className="fab fa-facebook-f me-2"
                   aria-controls="#picker-editor"
                 />{" "}
-              </div>
-              <h5 className="fw-bold mb-3">Support 24/7</h5>
-              <p className=" mb-0">
-                Laudantium totam quas cumque pariatur at doloremque hic quos quia
-                eius. Reiciendis optio minus mollitia rerum labore
-              </p>
-            </div>
-            <div className="col-lg-3 col-md-6 mb-5 mb-lg-0">
-              <div className="p-3 bg-primary rounded-circle shadow-2-strong d-inline-block mb-4">
+                <span>Facebook</span>{" "}
+              </a>
+              {/* Twitter */}{" "}
+              {/* <a
+                className="btn btn-primary btn-lg me-md-2 mb-3"
+                style={{ backgroundColor: "#55acee" }}
+                href="#!"
+                role="button"
+              >
+                {" "}
+                <i className="fab fa-twitter me-2" aria-controls="#picker-editor" />
+                <span>Twitter</span>{" "}
+              </a>{" "} */}
+              {/* Google */}{" "}
+              <a
+                className="btn btn-primary btn-lg me-md-2 mb-3"
+                style={{ backgroundColor: "#ed302f" }}
+                href="#!"
+                role="button"
+              >
                 {" "}
                 <i
-                  className="fas fa-shield-alt fa-lg text-white fa-fw"
+                  className="fab fa-youtube me-2"
                   aria-controls="#picker-editor"
                 />{" "}
-              </div>
-              <h5 className="fw-bold mb-3">Safe and solid</h5>
-              <p className=" mb-0">
-                Eum nostrum fugit numquam, voluptates veniam neque quibusdam ullam
-                aspernatur odio soluta, quisquam dolore animi
-              </p>
+                <span>YouTube</span>{" "}
+              </a>{" "}
+              {/* Instagram */}{" "}
+              <a
+                className="btn btn-primary btn-lg me-md-2 mb-3"
+                style={{ backgroundColor: "#ac2bac" }}
+                href="#!"
+                role="button"
+              >
+                <i className="fab fa-instagram me-2" aria-controls="#picker-editor" />{" "}
+                <span>Instagram</span>{" "}
+              </a>
             </div>
-            <div className="col-lg-3 col-md-6 mb-5 mb-md-0">
-              <div className="p-3 bg-primary rounded-circle shadow-2-strong d-inline-block mb-4">
-                {" "}
-                <i
-                  className="fas fa-shipping-fast fa-lg text-white fa-fw"
-                  aria-controls="#picker-editor"
-                />{" "}
-              </div>
-              <h5 className="fw-bold mb-3">Extremely fast</h5>
-              <p className=" mb-0">
-                Enim cupiditate, minus nulla dolor cumque iure eveniet facere ullam
-                beatae hic voluptatibus dolores exercitationem
-              </p>
-            </div>
-            <div className="col-lg-3 col-md-6 mb-5 mb-md-0">
-              <div className="p-3 bg-primary rounded-circle shadow-2-strong d-inline-block mb-4">
-                {" "}
-                <i
-                  className="fas fa-chart-pie fa-lg text-white fa-fw"
-                  aria-controls="#picker-editor"
-                />{" "}
-              </div>
-              <h5 className="fw-bold mb-3">Live analytics</h5>
-              <p className=" mb-0">
-                Illum doloremque ea, blanditiis sed dolor laborum praesentium maxime
-                sint, consectetur atque ipsum ab adipisci
-              </p>
-            </div>
-            <div className='mt-5 fw-bold mb-3'>
+            <div className='fw-bold pb-3'>
               <i class="fa-solid fa-copyright fa-lg me-1"></i>
               <font className='fw-bold fs-5'>copyright Esports Arena</font>
-              </div>
-          </div>
+            </div>
+          </section>
         </section>
-      </section>
-      {/**/}
-    </div>
+        {/**/}
+      </div>
+
 
 
     </div >

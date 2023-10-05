@@ -25,11 +25,17 @@ const TournamentDetails = () => {
       return <div className='card mt-4'>
         <div className='card-body'>
           <div className='row'>
-            <div className='col-md-5'>
-              <img src={'http://localhost:5000/' + esportsData.logo} alt="" className='my-img' />
+          <h1 className='mb-3 text-center mt-3 mb-5'><font className='fw-bold me-3'><i class="fa-solid fa-ranking-star me-3"></i>Tournament Name : </font><font>{esportsData.name}</font></h1>
+            <div className='col-md-6'>
+              <img src={'http://localhost:5000/' + esportsData.logo} alt="" className='my-img2' />
             </div>
-            <div className='col-md-7'>
-              <h1>Hello</h1>
+            <div className='col-md-6'>
+            <h3 className='mb-3'><font className='fw-bold me-3'><i class="fa-solid fa-filter me-3"></i>Category : </font><font>{esportsData.category}</font></h3>
+            <h3 className='mb-3'><font className='fw-bold me-3'><i class="fa-solid fa-people-group me-3"></i>TeamSize : </font><font>{esportsData.teamsize}</font></h3>
+            <h3 className='mb-3'><font className='fw-bold me-3'><i class="fa-solid fa-medal fa-lg me-3"></i>Prize : </font><font><i class="fa-solid fa-dollar-sign me-1"></i>{esportsData.prize}</font></h3>
+            <h3 className='mb-3'><font className='fw-bold me-3'><i class="fa-solid fa-location-dot me-3"></i>Venue : </font><font>{esportsData.venue}</font></h3>
+            <h3 className='mb-3'><font className='fw-bold me-3'><i class="fa-solid fa-calendar-days me-3"></i>Schedule :</font><font>{new Date(esportsData.schedule).toLocaleDateString()} {new Date(esportsData.schedule).toLocaleTimeString()}</font></h3>
+            <h3 className='mb-3'><font className='fw-bold me-3'><i class="fa-solid fa-align-right me-3"></i>Description : </font><font>{esportsData.description}</font></h3>
             </div>
           </div>
         </div>

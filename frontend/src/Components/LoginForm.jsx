@@ -89,12 +89,12 @@ const LoginForm = ({ setSignupOpen }) => {
                 <button type="submit" className="btn btn-dark w-100 my-3">
                     SignIn
                 </button>
-                <p className='mt-4 text-center'>
-                    <font className=''>Already Registered?</font>  <a href="" onClick={(e) => {
-                        e.preventDefault();
-                        setSignupOpen(true);
-                    }}>Signin</a>
-                </p>
+                <p className='text-center mt-4'>
+          <font>Don't have an account yet?</font>  <a href="" onClick={(e) => {
+            e.preventDefault();
+            setSignupOpen(true);
+          }}>SignUp</a>
+        </p>
             </form>
         </motion.div>
     )

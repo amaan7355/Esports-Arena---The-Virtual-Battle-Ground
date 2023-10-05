@@ -56,8 +56,15 @@
 } */
 
 .my-img{
-  height: 20rem;
+  height: 18rem;
   object-fit: cover;
+}
+
+.my-img2{
+  height: 25rem;
+  width: 30rem;
+  object-fit: cover;
+  /* background-size: cover; */
 }
 
 font{
