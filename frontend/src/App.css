@@ -16,6 +16,12 @@
   min-height: 100vh;
 }
 
+.body-TournamentDetails{
+  background-image: url("https://media.extron.com/public/landing/content/esports/esports-hero.jpg");
+  background-size: cover; 
+  min-height: 100vh;
+}
+
 .body-home{
   background-image: url("https://static01.nyt.com/images/2022/11/26/business/00esports-top/merlin_216757611_6eeb99a7-ab4a-455f-a422-94b23b570835-videoSixteenByNine3000.jpg");
   background-size: cover;
@@ -50,7 +56,7 @@
 } */
 
 .my-img{
-  height: 250px;
+  height: 20rem;
   object-fit: cover;
 }
 
