@@ -30,6 +30,12 @@ const ListTournament = () => {
     setEsportsData(result);
   }
 
+  const searchTournament = (e) => {
+    const search = e.target.value;
+    const result = masterList.filter((esport) => { return esport.name.toLowerCase().includes(search.toLowerCase()) })
+    setEsportsData(result);
+  }
+
   const DisplayData = () => {
     return esportsData.map((esports) => (
       <div className='col-md-4 mb-4'>
@@ -51,43 +57,37 @@ const ListTournament = () => {
   }
   return (
     <div className='body-ListTournament font'>
-      <div className='container py-4'>
-        <div className=''>
-          <h1 className='text-center text-white fw-bold mb-3'>Browse Tournaments</h1>
-          <div className="input-group">
-            <input
-              type="text"
-              className="form-control"
-              placeholder="Search..."
-              aria-label="Recipient's username"
-              aria-describedby="button-addon2"
-            />
-            <button
-              className="btn btn-lg btn-outline-light ms-2"
-              type="button"
-              id="button-addon2"
-            >Search 
-              {/* <i class="fa-solid fa-magnifying-glass ms-2"></i> */}
-              
-            </button>
+      <div className=''>
+        <div className='row'>
+          <div className='col-md-4 ps-2'>
+            <h1 className='text-center text-white fw-bold my-3'>Browse Tournaments</h1>
           </div>
-
-
-
-          {/* <input type="text" className='form-control mb-5'  /> */}
-          <div className='row my-4'>
-            <div className='col-md-4'>
-              <select className='form-control' onChange={filterTournament}>
-                <option value="">Select Category</option>
-                {
-                  categories.map((b) => (
-                    <option value={b}>{b}</option>
-                  ))
-                }
-              </select>
+          <div className='col-md-4 col-sm-6 ps-4'>
+            <div className='input-group input-group-lg'>
+              <input
+                type="text"
+                onChange={searchTournament}
+                className="form-control mt-4 "
+                placeholder="Search by tournament name..."
+              />
             </div>
           </div>
+          <div className='col-md-4 col-sm-6 pt-4'>'
+            <select className='form-control w-75 py-2 mt-1' onChange={filterTournament}
+              style={{ float: "right" }}
+            >
+              <option value="">Select Category</option>
+              {
+                categories.map((b) => (
+                  <option value={b}>{b}</option>
+                ))
+              }
+            </select>
+          </div>
+
         </div>
+      </div>
+      <div className='container py-4'>
         <div className='row mt-5 p-3'>
           {DisplayData()}
         </div>
