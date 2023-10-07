@@ -6,75 +6,75 @@ const Home = () => {
       <div id="preview" className="preview">
         <div style={{ display: "none" }} />
         <div data-draggable="true" className="" style={{ position: "relative" }}>
-        {/**/}
-        {/**/}
-        <section
-          draggable="false"
-          className="overflow-hidden pt-0"
-          data-v-271253ee=""
-        >
-          <section className="container mt-5 mb-10 background-radial-gradient">
-            <style
-              dangerouslySetInnerHTML={{
-                __html:
-                  "\n              .background-radial-gradient {\n                background-color: hsl(218, 41%, 15%);\n                background-image: radial-gradient(650px circle at 0% 0%, hsl(218, 41%, 35%) 15%, hsl(218, 41%, 30%) 35%, hsl(218, 41%, 20%) 75%, hsl(218, 41%, 19%) 80%, transparent 100%), radial-gradient(1250px circle at 100% 100%, hsl(218, 41%, 45%) 15%, hsl(218, 41%, 30%) 35%, hsl(218, 41%, 20%) 75%, hsl(218, 41%, 19%) 80%, transparent 100%);\n              }\n            "
-              }}
-            />
-            <div className="container px-4 py-5 px-md-5 text-center text-lg-start">
-              <div className="row gx-lg-5 align-items-center">
-                <div className="col-lg-6 mb-5 mb-lg-0">
-                  <h1
-                    className="my-5 display-3 fw-bold ls-tight"
-                    style={{ color: "hsl(218, 81%, 95%)" }}
-                  >
-                    {" "}
-                    <span>"Enter the Arena: </span> <br />{" "}
-                    <span style={{ color: "hsl(218, 81%, 75%)" }}>
-                      Your Path to Glory Begins Here!"
-                    </span>{" "}
-                  </h1>{" "}
-                  <a
-                    className="btn btn-light btn-lg py-3 px-5 mb-2 mb-md-0 me-md-2"
-                    data-ripple-color="primary"
-                    href="#"
-                    role="button"
-                    aria-controls=""
-                  >
-                    Get started
-                  </a>{" "}
-                  <a
-                    className="btn btn-outline-light btn-lg py-3 px-5"
-                    // style={{ backgroundColor: "hsl(218, 100%, 50%)", border: "none" }}
-                    href="#"
-                    role="button"
-                    aria-controls="#picker-editor"
-                  >
-                    Browse
-                  </a>
-                </div>
-                <div className="col-lg-6 mb-5 mb-lg-0">
-                  <div className="ratio ratio-16x9">
-                        {" "}
-                        <iframe
-                          width={930}
-                          height={523}
-                          src="https://www.youtube.com/embed/box4SFtGvA0?mute=1&autoplay=1"
-                          title="Esports: Inside the relentless training of professional gaming stars"
-                          className='rounded-4 shadow-4-strong'
-                          frameBorder={0}
-                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                          allowFullScreen=""
-                        />
-                        {" "}
-                      </div>
+          {/**/}
+          {/**/}
+          <section
+            draggable="false"
+            className="overflow-hidden pt-0"
+            data-v-271253ee=""
+          >
+            <section className="container mt-5 mb-10 background-radial-gradient">
+              <style
+                dangerouslySetInnerHTML={{
+                  __html:
+                    "\n              .background-radial-gradient {\n                background-color: hsl(218, 41%, 15%);\n                background-image: radial-gradient(650px circle at 0% 0%, hsl(218, 41%, 35%) 15%, hsl(218, 41%, 30%) 35%, hsl(218, 41%, 20%) 75%, hsl(218, 41%, 19%) 80%, transparent 100%), radial-gradient(1250px circle at 100% 100%, hsl(218, 41%, 45%) 15%, hsl(218, 41%, 30%) 35%, hsl(218, 41%, 20%) 75%, hsl(218, 41%, 19%) 80%, transparent 100%);\n              }\n            "
+                }}
+              />
+              <div className="container px-4 py-5 px-md-5 text-center text-lg-start">
+                <div className="row gx-lg-5 align-items-center">
+                  <div className="col-lg-6 mb-5 mb-lg-0">
+                    <h1
+                      className="my-5 display-3 fw-bold ls-tight"
+                      style={{ color: "hsl(218, 81%, 95%)" }}
+                    >
+                      {" "}
+                      <span>"Enter the Arena: </span> <br />{" "}
+                      <span style={{ color: "hsl(218, 81%, 75%)" }}>
+                        Your Path to Glory Begins Here!"
+                      </span>{" "}
+                    </h1>{" "}
+                        <a
+                          className="m-auto btn btn-light btn-lg py-3 px-5 mb-2 mb-md-0 me-3 mb-4"
+                          data-ripple-color="primary"
+                          href="/listtournament"
+                          role="button"
+                          aria-controls=""
+                        >
+                          Get started
+                        </a>{" "}
+                        <a
+                          className="m-auto btn btn-outline-light btn-lg py-3 px-5"
+                          // style={{ backgroundColor: "hsl(218, 100%, 50%)", border: "none" }}
+                          href="/signup"
+                          role="button"
+                          aria-controls="#picker-editor"
+                        >
+                          Register
+                        </a>
+                  </div>
+                  <div className="col-lg-6 mb-5 mb-lg-0">
+                    <div className="ratio ratio-16x9">
+                      {" "}
+                      <iframe
+                        width={930}
+                        height={523}
+                        src="https://www.youtube.com/embed/box4SFtGvA0?mute=1&autoplay=1"
+                        title="Esports: Inside the relentless training of professional gaming stars"
+                        className='rounded-4 shadow-4-strong'
+                        frameBorder={0}
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowFullScreen=""
+                      />
+                      {" "}
+                    </div>
+                  </div>
                 </div>
               </div>
-            </div>
+            </section>
           </section>
-        </section>
-        {/**/}
-      </div>
-        
+          {/**/}
+        </div>
+
 
 
         <div data-draggable="true" className="" style={{ position: "relative" }}>
@@ -152,57 +152,57 @@ const Home = () => {
         </div>
       </div>
       <div>
-          <div
-            data-draggable="true"
-            className=""
-            style={{ position: "relative" }}
-            draggable="false"
-          >
-            {/**/}
-            {/**/}
-            <section draggable="false" className="container pt-5" data-v-271253ee="">
-              <section className="mb-10 background-radial-gradient">
-                <style
-                  dangerouslySetInnerHTML={{
-                    __html:
-                      "\n              .background-radial-gradient {\n                background-color: hsl(127, 52%, 37%);\n                background-image: radial-gradient(650px circle at 0% 0%, hsl(218, 41%, 35%) 15%, hsl(218, 41%, 30%) 35%, hsl(218, 41%, 20%) 75%, hsl(218, 41%, 19%) 80%, transparent 100%), radial-gradient(1250px circle at 100% 100%, hsl(218, 41%, 45%) 15%, hsl(218, 41%, 30%) 35%, hsl(218, 41%, 20%) 75%, hsl(218, 41%, 19%) 80%, transparent 100%);\n              }\n            "
-                  }}
-                />
-                <div className="container px-4 py-5 px-md-5 text-center text-lg-start">
-                  <div className="row gx-lg-5 align-items-center my-5 my-lg-0">
-                    <div className="col-lg-6 mb-5 mb-lg-0">
-                      <h1
-                        className="mb-5 display-3 fw-bold ls-tight"
-                        style={{ color: "hsl(218, 81%, 95%)" }}
-                      >
-                        {" "}
-                        <span>Are you ready</span> <br />{" "}
-                        <span style={{ color: "hsl(218, 81%, 75%)" }}>
-                          for an adventure?
-                        </span>{" "}
-                      </h1>
-                      <p className="text-white lead mb-xl-0">
-                        Dive into the heart of competitive gaming with our esports tournaments! Join thousands of passionate gamers from around the world in the ultimate battle for glory. Whether you're a seasoned pro or a casual player, there's a tournament waiting for you.
-                      </p>
-                    </div>
-                    <div className="col-lg-6">
+        <div
+          data-draggable="true"
+          className=""
+          style={{ position: "relative" }}
+          draggable="false"
+        >
+          {/**/}
+          {/**/}
+          <section draggable="false" className="container pt-5" data-v-271253ee="">
+            <section className="mb-10 background-radial-gradient">
+              <style
+                dangerouslySetInnerHTML={{
+                  __html:
+                    "\n              .background-radial-gradient {\n                background-color: hsl(127, 52%, 37%);\n                background-image: radial-gradient(650px circle at 0% 0%, hsl(218, 41%, 35%) 15%, hsl(218, 41%, 30%) 35%, hsl(218, 41%, 20%) 75%, hsl(218, 41%, 19%) 80%, transparent 100%), radial-gradient(1250px circle at 100% 100%, hsl(218, 41%, 45%) 15%, hsl(218, 41%, 30%) 35%, hsl(218, 41%, 20%) 75%, hsl(218, 41%, 19%) 80%, transparent 100%);\n              }\n            "
+                }}
+              />
+              <div className="container px-4 py-5 px-md-5 text-center text-lg-start">
+                <div className="row gx-lg-5 align-items-center my-5 my-lg-0">
+                  <div className="col-lg-6 mb-5 mb-lg-0">
+                    <h1
+                      className="mb-5 display-3 fw-bold ls-tight"
+                      style={{ color: "hsl(218, 81%, 95%)" }}
+                    >
                       {" "}
-                  <img
-                    src="https://www.dailygame.net/wp-content/uploads/2022/12/esports.jpg"
-                    className="w-100 rounded-4 shadow-5"
-                    alt=""
-                    aria-controls="#picker-editor"
-                  />{" "}
-                    </div>
+                      <span>Are you ready</span> <br />{" "}
+                      <span style={{ color: "hsl(218, 81%, 75%)" }}>
+                        for an adventure?
+                      </span>{" "}
+                    </h1>
+                    <p className="text-white lead mb-xl-0">
+                      Dive into the heart of competitive gaming with our esports tournaments! Join thousands of passionate gamers from around the world in the ultimate battle for glory. Whether you're a seasoned pro or a casual player, there's a tournament waiting for you.
+                    </p>
+                  </div>
+                  <div className="col-lg-6">
+                    {" "}
+                    <img
+                      src="https://www.dailygame.net/wp-content/uploads/2022/12/esports.jpg"
+                      className="w-100 rounded-4 shadow-5"
+                      alt=""
+                      aria-controls="#picker-editor"
+                    />{" "}
                   </div>
                 </div>
-              </section>
+              </div>
             </section>
-            {/**/}
-          </div>
+          </section>
+          {/**/}
         </div>
+      </div>
 
-      
+
 
 
       <div data-draggable="true" className="" style={{ position: "relative" }}>
@@ -395,9 +395,8 @@ const Home = () => {
                   />{" "}
                 </div>
                 <h5 className="fw-bold mb-3">Support 24/7</h5>
-                <p className=" mb-0">
-                  Laudantium totam quas cumque pariatur at doloremque hic quos quia
-                  eius. Reiciendis optio minus mollitia rerum labore
+                <p className="p-2 mb-0">
+                We're committed to providing timely and reliable assistance whenever you need it, ensuring your peace of mind and uninterrupted service.
                 </p>
               </div>
               <div className="col-lg-3 col-md-6 mb-5 mb-lg-0">
@@ -409,9 +408,8 @@ const Home = () => {
                   />{" "}
                 </div>
                 <h5 className="fw-bold mb-3">Safe and solid</h5>
-                <p className=" mb-0">
-                  Eum nostrum fugit numquam, voluptates veniam neque quibusdam ullam
-                  aspernatur odio soluta, quisquam dolore animi
+                <p className="p-2 mb-0">
+                We're ensuring reliability and security at every level. Trust in our commitment to delivering a robust and secure solution.
                 </p>
               </div>
               <div className="col-lg-3 col-md-6 mb-5 mb-md-0">
@@ -423,9 +421,8 @@ const Home = () => {
                   />{" "}
                 </div>
                 <h5 className="fw-bold mb-3">Extremely fast</h5>
-                <p className=" mb-0">
-                  Enim cupiditate, minus nulla dolor cumque iure eveniet facere ullam
-                  beatae hic voluptatibus dolores exercitationem
+                <p className="p-2 mb-0">
+                Experience the thrill of extremely fast performance, as our cutting-edge technology delivers lightning-quick results, setting new speed benchmarks.
                 </p>
               </div>
               <div className="col-lg-3 col-md-6 mb-5 mb-md-0">
@@ -437,9 +434,8 @@ const Home = () => {
                   />{" "}
                 </div>
                 <h5 className="fw-bold mb-3">Live analytics</h5>
-                <p className=" mb-0">
-                  Illum doloremque ea, blanditiis sed dolor laborum praesentium maxime
-                  sint, consectetur atque ipsum ab adipisci
+                <p className="p-2 mb-0">
+                Harness the power of live analytics to gain real-time insights and make informed decisions as events unfold.
                 </p>
               </div>
 

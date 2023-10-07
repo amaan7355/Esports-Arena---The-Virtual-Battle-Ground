@@ -73,7 +73,7 @@ const ListTournament = () => {
             </div>
           </div>
           <div className='col-md-4 col-sm-6 pt-4'>'
-            <select className='form-control w-75 py-2 mt-1' onChange={filterTournament}
+            <select className='form-control w-75 me-3 py-2 mt-1' onChange={filterTournament}
               style={{ float: "right" }}
             >
               <option value="">Select Category</option>
