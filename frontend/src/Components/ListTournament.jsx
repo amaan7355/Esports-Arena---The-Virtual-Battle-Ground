@@ -57,23 +57,23 @@ const ListTournament = () => {
   }
   return (
     <div className='body-ListTournament font'>
-      <div className=''>
+      <div className='container'>
         <div className='row'>
           <div className='col-md-4 ps-2'>
             <h1 className='text-center text-white fw-bold my-3'>Browse Tournaments</h1>
           </div>
-          <div className='col-md-4 col-sm-6 ps-4'>
+          <div className='col-md-4 col-sm-6'>
             <div className='input-group input-group-lg'>
               <input
                 type="text"
                 onChange={searchTournament}
-                className="form-control mt-4 "
+                className="form-control mt-4 form-control-lg"
                 placeholder="Search by tournament name..."
               />
             </div>
           </div>
-          <div className='col-md-4 col-sm-6 pt-4'>'
-            <select className='form-control w-75 me-3 py-2 mt-1' onChange={filterTournament}
+          <div className='col-md-4 col-sm-6 '>'
+            <select className='form-control form-control-lg' onChange={filterTournament}
               style={{ float: "right" }}
             >
               <option value="">Select Category</option>
