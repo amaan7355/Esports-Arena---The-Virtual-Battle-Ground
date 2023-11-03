@@ -71,3 +71,9 @@ font{
   font-family: Montserrat;
 }
 
+.nav-item .active{
+  font-weight: bolder;
+  border-bottom: 2px solid greenyellow;
+  /* color: blueviolet !important; */
+}
+
