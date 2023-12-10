@@ -48,11 +48,11 @@ const SignupForm = ({ setSignupOpen }) => {
           title: 'Nice',
           text: 'You have signed up successfully'
         })
-          .then((result) => {
-            navigate('/login');
-          }).catch((err) => {
+          // .then((result) => {
+          //   navigate('/signupform');
+          // }).catch((err) => {
 
-          });
+          // });
       } else {
         Swal.fire({
           icon: 'error',

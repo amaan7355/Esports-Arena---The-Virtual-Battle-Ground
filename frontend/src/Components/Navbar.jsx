@@ -26,7 +26,7 @@ const Navbar = () => {
             <>
                 <li className="nav-item">
                     <NavLink className="nav-link" to="/signup">
-                    <font className='text-white'>Sign up</font>
+                    <button className='btn btn-outline-light'>Sign up</button>
                     </NavLink>
                 </li>
             </>

@@ -1,49 +1,49 @@
-.body{
-  background: rgb(0,0,0);
-  background: linear-gradient(90deg, rgba(0,0,0,0.9753151260504201) 0%, rgba(67,129,71,1) 28%, rgba(67,129,71,1) 68%, rgba(0,0,0,1) 100%);
+.body {
+  background: rgb(0, 0, 0);
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.9753151260504201) 0%, rgba(67, 129, 71, 1) 28%, rgba(67, 129, 71, 1) 68%, rgba(0, 0, 0, 1) 100%);
   height: 100%;
 }
 
-.body-ListTournament{
-  background-image: url("https://media.extron.com/public/landing/content/esports/esports-hero.jpg");
-  background-size: cover; 
-  min-height: 100vh;
-}
-
-.body-AddTournament{
+.body-ListTournament {
   background-image: url("https://media.extron.com/public/landing/content/esports/esports-hero.jpg");
   background-size: cover;
   min-height: 100vh;
 }
 
-.body-TournamentDetails{
+.body-AddTournament {
   background-image: url("https://media.extron.com/public/landing/content/esports/esports-hero.jpg");
-  background-size: cover; 
+  background-size: cover;
   min-height: 100vh;
 }
 
-.body-home{
+.body-TournamentDetails {
+  background-image: url("https://media.extron.com/public/landing/content/esports/esports-hero.jpg");
+  background-size: cover;
+  min-height: 100vh;
+}
+
+.body-home {
   background-image: url("https://static01.nyt.com/images/2022/11/26/business/00esports-top/merlin_216757611_6eeb99a7-ab4a-455f-a422-94b23b570835-videoSixteenByNine3000.jpg");
   background-size: cover;
   height: 100%;
 }
 
-.body-signup{
+.body-signup {
   background-image: url("https://img.buzzfeed.com/buzzfeed-static/complex/images/gq2gdlvi9i7vvowtzpfm/league-of-legends.jpg?output-format=jpg&output-quality=auto");
   background-size: cover;
   height: 100%;
 }
 
-.body1{
+.body1 {
   background-color: black;
   height: 100%;
 }
 
-.signup-card{
+.signup-card {
   background-color: black;
 }
 
-.signup-input{
+.signup-input {
   width: 100%;
   padding: 5px;
   border: 0.5px lightgrey;
@@ -55,25 +55,34 @@
   color: darkgray;
 } */
 
-.my-img{
+.my-img {
   height: 18rem;
   object-fit: cover;
 }
 
-.my-img2{
+.my-img2 {
   height: 25rem;
   width: 30rem;
   object-fit: cover;
   /* background-size: cover; */
 }
 
-font{
+font {
   font-family: Montserrat;
 }
 
-.nav-item .active{
+.nav-item .active {
   font-weight: bolder;
   border-bottom: 2px solid greenyellow;
   /* color: blueviolet !important; */
 }
 
+.style-one {
+  border: 0;
+  height: 1px;
+  background: #333;
+  background-image: -webkit-linear-gradient(left, #ccc, #333, #ccc);
+  background-image: -moz-linear-gradient(left, #ccc, #333, #ccc);
+  background-image: -ms-linear-gradient(left, #ccc, #333, #ccc);
+  background-image: -o-linear-gradient(left, #ccc, #333, #ccc);
+}

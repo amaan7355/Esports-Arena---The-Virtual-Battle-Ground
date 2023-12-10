@@ -11,6 +11,20 @@ const SignupSchema = Yup.object().shape({
 
 const AddTournament = () => {
 
+    const validate = values => {
+    const errors = {};
+
+    // Add your validation logic here
+    // For example, check if the name field is empty
+    if (!values.name) {
+        errors.name = 'Required';
+    }
+
+    // Repeat for other fields...
+
+    return errors;
+};
+
     const navigate = useNavigate();
 
     const [selFile, setSelFile] = useState('');
@@ -30,8 +44,12 @@ const AddTournament = () => {
         },
         onSubmit: async (values, { setSubmitting }) => {
             console.log(values);
+            // handleSubmit(values);
             values.logo = selFile;
             setSubmitting(true);
+            // onSubmit: async values => {
+            //     handleSubmit(values);
+            // }
 
             // setTimeout(() => {
             //     console.log(values);
@@ -78,7 +96,7 @@ const AddTournament = () => {
                     backdropFilter: "blur(30px)"
                 }}>
                     <div className='card-body'>
-                    <h1 className='text-center fw-bold'>Add Your Tournaments</h1>
+                        <h1 className='text-center fw-bold'>Add Your Tournaments</h1>
                         <form action="" onSubmit={addTournament.handleSubmit} >
                             <div className='row'>
                                 <div className='col-md-6'>

@@ -1,4 +1,12 @@
-import React from 'react'
+import React from 'react';
+import {
+  MDBFooter,
+  MDBContainer,
+  MDBCol,
+  MDBRow,
+  MDBIcon,
+  MDBBtn
+} from 'mdb-react-ui-kit';
 
 const Home = () => {
   return (
@@ -33,24 +41,24 @@ const Home = () => {
                         Your Path to Glory Begins Here!"
                       </span>{" "}
                     </h1>{" "}
-                        <a
-                          className="m-auto btn btn-light btn-lg py-3 px-5 mb-2 mb-md-0 me-3 mb-4"
-                          data-ripple-color="primary"
-                          href="/listtournament"
-                          role="button"
-                          aria-controls=""
-                        >
-                          Get started
-                        </a>{" "}
-                        <a
-                          className="m-auto btn btn-outline-light btn-lg py-3 px-5"
-                          // style={{ backgroundColor: "hsl(218, 100%, 50%)", border: "none" }}
-                          href="/signup"
-                          role="button"
-                          aria-controls="#picker-editor"
-                        >
-                          Register
-                        </a>
+                    <a
+                      className="m-auto btn btn-light btn-lg py-3 px-5 mb-2 mb-md-0 me-3 mb-4"
+                      data-ripple-color="primary"
+                      href="/listtournament"
+                      role="button"
+                      aria-controls=""
+                    >
+                      Get started
+                    </a>{" "}
+                    <a
+                      className="m-auto btn btn-outline-light btn-lg py-3 px-5"
+                      // style={{ backgroundColor: "hsl(218, 100%, 50%)", border: "none" }}
+                      href="/signup"
+                      role="button"
+                      aria-controls="#picker-editor"
+                    >
+                      Register
+                    </a>
                   </div>
                   <div className="col-lg-6 mb-5 mb-lg-0">
                     <div className="ratio ratio-16x9">
@@ -100,9 +108,9 @@ const Home = () => {
                       }}
                     >
                       <div className="card-body py-5 px-md-5 shadow-5">
-                        <h2 className="fw-bold mb-4">"Gaming Dreams Come True: Win Prizes, Earn Respect"</h2>
+                        <h2 className="fw-bold mb-4"><span className='text-primary'> "Gaming Dreams Come True:</span> Win Prizes, Earn Respect"</h2>
                         <h4 className=" mb-4">
-                          Enter the Arena: Your Path to Glory Begins Here!
+                          Enter the Arena: <span className='text-primary'>Your Path to Glory Begins Here!</span>
                         </h4>
                         <div className="row mb-3">
                           <div className="col-lg-4">
@@ -215,7 +223,7 @@ const Home = () => {
           }}>
             <div className="row d-flex justify-content-center">
               <div className="col-md-10 col-xl-8">
-                <h1 className="mt-3 mb-5 fw-bold"><span style={{ color: "hsl(220, 80%, 60%)" }}>Players on Top!</span>{" "}</h1>
+                <h1 className="mt-3 mb-5 fw-bold"><span className=''>Players on <span className='text-primary'>Top!</span></span>{" "}</h1>
               </div>
             </div>
             <div className="row">
@@ -369,13 +377,12 @@ const Home = () => {
                   "\n              .background-radial-gradient {\n                background-color: hsl(218, 41%, 15%);\n                background-image: radial-gradient(650px circle at 0% 0%, hsl(218, 41%, 35%) 15%, hsl(218, 41%, 30%) 35%, hsl(218, 41%, 20%) 75%, hsl(218, 41%, 19%) 80%, transparent 100%), radial-gradient(1250px circle at 100% 100%, hsl(218, 41%, 45%) 15%, hsl(218, 41%, 30%) 35%, hsl(218, 41%, 20%) 75%, hsl(218, 41%, 19%) 80%, transparent 100%);\n              }\n            "
               }}
             />
-
             <div className="d-flex justify-content-center">
               <div className="text-center p-4" style={{ maxWidth: 700 }}>
                 <h2 className="fw-bold mb-4 text-center">
                   {" "}
                   <span className="me-2">Why is it so</span>
-                  <span style={{ color: "hsl(218, 81%, 75%)" }}>great?{" "} </span>
+                  <span className='text-primary'>great?{" "} </span>
 
                 </h2>
                 {/* <p className=" mb-5">
@@ -396,7 +403,7 @@ const Home = () => {
                 </div>
                 <h5 className="fw-bold mb-3">Support 24/7</h5>
                 <p className="p-2 mb-0">
-                We're committed to providing timely and reliable assistance whenever you need it, ensuring your peace of mind and uninterrupted service.
+                  We're committed to providing timely and reliable assistance whenever you need it, ensuring your peace of mind and uninterrupted service.
                 </p>
               </div>
               <div className="col-lg-3 col-md-6 mb-5 mb-lg-0">
@@ -409,7 +416,7 @@ const Home = () => {
                 </div>
                 <h5 className="fw-bold mb-3">Safe and solid</h5>
                 <p className="p-2 mb-0">
-                We're ensuring reliability and security at every level. Trust in our commitment to delivering a robust and secure solution.
+                  We're ensuring reliability and security at every level. Trust in our commitment to delivering a robust and secure solution.
                 </p>
               </div>
               <div className="col-lg-3 col-md-6 mb-5 mb-md-0">
@@ -422,7 +429,7 @@ const Home = () => {
                 </div>
                 <h5 className="fw-bold mb-3">Extremely fast</h5>
                 <p className="p-2 mb-0">
-                Experience the thrill of extremely fast performance, as our cutting-edge technology delivers lightning-quick results, setting new speed benchmarks.
+                  Experience the thrill of extremely fast performance, as our cutting-edge technology delivers lightning-quick results, setting new speed benchmarks.
                 </p>
               </div>
               <div className="col-lg-3 col-md-6 mb-5 mb-md-0">
@@ -435,31 +442,118 @@ const Home = () => {
                 </div>
                 <h5 className="fw-bold mb-3">Live analytics</h5>
                 <p className="p-2 mb-0">
-                Harness the power of live analytics to gain real-time insights and make informed decisions as events unfold.
+                  Harness the power of live analytics to gain real-time insights and make informed decisions as events unfold.
                 </p>
               </div>
 
             </div>
+
           </section>
         </section>
         {/**/}
       </div>
 
-      <div data-draggable="true" className="mt-5" style={{ position: "relative" }}>
-        {/**/}
-        {/**/}
+
+       <div data-draggable="true" className="mt-5" style={{ position: "relative" }}>
         <section draggable="false" className="" data-v-271253ee="" style={{
           background: "hsla(0, 0%, 100%, 0.80)",
           backdropFilter: "blur(30px)"
         }}>
           <section className="mb-10 text-center">
-            <div className="p-5">
-              <h2 className="mb-5 display-5 fw-bold ls-tight">
+
+          <MDBFooter className='text-center text-white' style={{ backgroundColor: '#f1f1f1' }}>
+      <MDBContainer className='pt-4'>
+        <section className='mb-4'>
+          {/*<MDBBtn
+            rippleColor="dark"
+            color='link'
+            floating
+            size="lg"
+            className='text-dark m-1'
+            href='#!'
+            role='button'
+          >
+             <MDBIcon fab className='fab fa-facebook-f' />
+          </MDBBtn>*/}
+
+          <MDBBtn
+            rippleColor="dark"
+            color='link'
+            floating
+            size="lg"
+            className='text-dark m-1'
+            href='#!'
+            role='button'
+          > 
+            <MDBIcon fab className='fa-twitter' />
+          </MDBBtn>
+
+          <MDBBtn
+            rippleColor="dark"
+            color='link'
+            floating
+            size="lg"
+            className='text-dark m-1'
+            href='https://www.google.co.in/'
+            role='button'
+          >
+            <MDBIcon fab className='fa-google' />
+          </MDBBtn>
+
+          {/*<MDBBtn
+            rippleColor="dark"
+            color='link'
+            floating
+            size="lg"
+            className='text-dark m-1'
+            href=''
+            role='button'
+          >
+             <MDBIcon fab className='fa-instagram' />
+          </MDBBtn>*/}
+
+          <MDBBtn
+            rippleColor="dark"
+            color='link'
+            floating
+            size="lg"
+            className='text-dark m-1'
+            href='#!'
+            role='button'
+          > 
+            <MDBIcon fab className='fa-linkedin' />
+          </MDBBtn>
+
+          <MDBBtn
+            rippleColor="dark"
+            color='link'
+            floating
+            size="lg"
+            className='text-dark m-1'
+            href='#!'
+            role='button'
+          >
+            <MDBIcon fab className='fa-github' />
+          </MDBBtn>
+        </section>
+      </MDBContainer>
+
+      <div className='text-center text-dark p-3'>
+        © 2023 Esports Arena
+        {/* <a className='text-dark' href='https://mdbootstrap.com/'>
+          Esports Arena
+        </a> */}
+      </div>
+    </MDBFooter>
+
+
+
+           {/* <div className="p-5">
+               <h2 className="mb-5 display-5 fw-bold ls-tight">
                 {" "}
                 <span>Let's stay in touch</span> <br />{" "}
-                <span className="text-primary">Join our social media</span>{" "}
-              </h2>{" "}
-              {/* Facebook */}{" "}
+                {/* <span className="text-primary">Join our social media</span>{" "} 
+              </h2>
               <a
                 className="btn btn-primary btn-lg me-md-2 mb-3"
                 style={{ backgroundColor: "#3b5998" }}
@@ -469,53 +563,40 @@ const Home = () => {
                 <i
                   className="fab fa-facebook-f me-2"
                   aria-controls="#picker-editor"
-                />{" "}
-                <span>Facebook</span>{" "}
+                />
+                <span>Facebook</span>
               </a>
-              {/* Twitter */}{" "}
-              {/* <a
-                className="btn btn-primary btn-lg me-md-2 mb-3"
-                style={{ backgroundColor: "#55acee" }}
-                href="#!"
-                role="button"
-              >
-                {" "}
-                <i className="fab fa-twitter me-2" aria-controls="#picker-editor" />
-                <span>Twitter</span>{" "}
-              </a>{" "} */}
-              {/* Google */}{" "}
               <a
                 className="btn btn-primary btn-lg me-md-2 mb-3"
                 style={{ backgroundColor: "#ed302f" }}
                 href="#!"
                 role="button"
               >
-                {" "}
+                
                 <i
                   className="fab fa-youtube me-2"
                   aria-controls="#picker-editor"
-                />{" "}
-                <span>YouTube</span>{" "}
-              </a>{" "}
-              {/* Instagram */}{" "}
+                />
+                <span>YouTube</span>
+              </a>
+              
               <a
                 className="btn btn-primary btn-lg me-md-2 mb-3"
                 style={{ backgroundColor: "#ac2bac" }}
                 href="#!"
                 role="button"
               >
-                <i className="fab fa-instagram me-2" aria-controls="#picker-editor" />{" "}
-                <span>Instagram</span>{" "}
+                <i className="fab fa-instagram me-2" aria-controls="#picker-editor" />
+                <span>Instagram</span>
               </a>
             </div>
             <div className='fw-bold pb-3'>
               <i class="fa-solid fa-copyright fa-lg me-1"></i>
               <font className='fw-bold fs-5'>copyright Esports Arena</font>
-            </div>
+            </div>*/}
           </section>
         </section>
-        {/**/}
-      </div>
+      </div> 
 
 
 
