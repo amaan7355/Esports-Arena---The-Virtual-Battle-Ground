@@ -103,8 +103,9 @@ const SignupForm = ({ setSignupOpen }) => {
           Password <span style={{ color: 'red' }}> <sup>*</sup></span>
         </label>
         <input type="password" name='password' className="form-control   mb-4" placeholder="Your Password" onChange={signUpform.handleChange} value={signUpform.values.password} />
-        {/* <input type="file" className='my-3' onChange={uploadFile} />
-        <br /> */}
+        <label htmlFor="" className='form-label fw-bold'>Avatar</label><br />
+        <input type="file" className='mb-3' onChange={uploadFile} />
+        <br />
         {/* <p className=' signup-tc'><input type="checkbox" className='me-2' /> I accept <span className='text-decoration-underline fw-bold'>terms and conditions</span> & <span className='text-decoration-underline fw-bold'>privacy policy</span></p> */}
         <button disabled={signUpform.isSubmitting} className="btn btn-dark w-100 mt-2 mb-4" type='submit'>
           {

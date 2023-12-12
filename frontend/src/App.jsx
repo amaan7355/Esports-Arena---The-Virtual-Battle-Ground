@@ -13,6 +13,7 @@ import AddTournament from './components/AddTournament';
 import ListTournament from './components/ListTournament';
 import TournamentDetails from './components/TournamentDetails';
 import SignupForm from './components/SignupForm';
+import RegisterTournament from './components/RegisterTournament';
 
 
 function App() {
@@ -31,6 +32,7 @@ function App() {
               <Route element={<AddTournament />} path='/addtournament' />
               <Route element={<ListTournament />} path='/listtournament' />
               <Route element={<SignupForm />} path='/signupfrom' />
+              <Route element={<RegisterTournament />} path='/register' />
               <Route element={<TournamentDetails />} path='/tourdetails/:id' />
               <Route element={<UserAuth> <ManageUser /> </UserAuth> } path='/manageuser' />
               <Route element={<Notfound />} path='/*' />
