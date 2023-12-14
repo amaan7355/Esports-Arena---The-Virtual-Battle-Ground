@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { useParams } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 
 const TournamentDetails = () => {
   const [esportsData, setEsportsData] = useState(null);
@@ -36,7 +36,7 @@ const TournamentDetails = () => {
             <h3 className='mb-3'><font className='fw-bold me-3'><i class="fa-solid fa-location-dot me-3"></i>Venue : </font><font>{esportsData.venue}</font></h3>
             <h3 className='mb-3'><font className='fw-bold me-3'><i class="fa-solid fa-calendar-days me-3"></i>Schedule :</font><font>{new Date(esportsData.schedule).toLocaleDateString()} {new Date(esportsData.schedule).toLocaleTimeString()}</font></h3>
             <h3 className='mb-3'><font className='fw-bold me-3'><i class="fa-solid fa-align-right me-3"></i>Description : </font><font>{esportsData.description}</font></h3>
-            <a className='btn btn-dark w-100 mt-3' href='/register'>Register</a>
+            <Link to="/register"><button className='btn btn-dark w-100 mt-3'>Register</button></Link>
             </div>
           </div>
         </div>
