@@ -6,7 +6,7 @@ const ManageUser = () => {
 
   const [userData, setUserData] = useState([]);
   const fetchUserData = async () => {
-    const res = await fetch('http://localhost:5000/user/getall');
+    const res = await fetch('https://esportsarena.onrender.com/user/getall');
     console.log(res.status);
 
     if (res.status === 200) {
@@ -21,7 +21,7 @@ const ManageUser = () => {
   }, []);
 
   const deleteUser = async (id) => {
-    //   const res = await fetch ('http://localhost:5000/user/delete/'+id, {method: 'DELETE'});
+    //   const res = await fetch ('https://esportsarena.onrender.com/user/delete/'+id, {method: 'DELETE'});
     //   if (res.status === 200){
     //     console.log('user deleted');
     //     fetchUserData();
@@ -31,7 +31,7 @@ const ManageUser = () => {
     // }
 
     toast.promise(
-      fetch('http://localhost:5000/user/delete/' + id, { method: 'DELETE' }),
+      fetch('https://esportsarena.onrender.com/user/delete/' + id, { method: 'DELETE' }),
       {
         loading: "Deleting...",
         success: () => {

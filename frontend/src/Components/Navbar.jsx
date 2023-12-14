@@ -16,7 +16,7 @@ const Navbar = () => {
             <>
             <li className='nav-item'><button className='btn btn-danger' onClick={logout}>Logout</button></li>
             <li>
-                <img height={50} className='rounded-circle' src={"http://localhost:5000/" +avatar} alt="avatar" />
+                <img height={50} className='rounded-circle' src={"https://esportsarena.onrender.com/" +avatar} alt="avatar" />
             </li>
             </>
             )

@@ -8,7 +8,7 @@ const ListTournament = () => {
   const [masterList, setMasterList] = useState([]);
 
   const fetchEsportsData = async () => {
-    const res = await fetch('http://localhost:5000/esport/getall');
+    const res = await fetch('https://esportsarena.onrender.com/esport/getall');
     console.log(res.status);
 
     if (res.status === 200) {
@@ -41,7 +41,7 @@ const ListTournament = () => {
       <div className='col-md-4 mb-4'>
         <div className='card'>
           <div className='row'>
-            <img src={'http://localhost:5000/' + esports.logo} alt="" className='card-img-top my-img' />
+            <img src={'https://esportsarena.onrender.com/' + esports.logo} alt="" className='card-img-top my-img' />
 
             <div className='card-body p-4'>
               <h5><font className='fw-bold me-3'><i class="fa-solid fa-ranking-star me-1"></i>Tournament : </font><font>{esports.name}</font></h5>

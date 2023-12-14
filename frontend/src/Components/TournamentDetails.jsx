@@ -6,7 +6,7 @@ const TournamentDetails = () => {
   const { id } = useParams();
 
   const fetchEsportsData = async () => {
-    const res = await fetch('http://localhost:5000/esport/getbyid/' + id);
+    const res = await fetch('https://esportsarena.onrender.com/esport/getbyid/' + id);
     console.log(res.status);
 
     if (res.status === 200) {
@@ -27,7 +27,7 @@ const TournamentDetails = () => {
           <div className='row'>
           <h1 className='mb-3 text-center mt-3 mb-5'><font className='fw-bold me-3'><i class="fa-solid fa-ranking-star me-3"></i>Tournament Name : </font><font>{esportsData.name}</font></h1>
             <div className='col-md-6 col-sm-12'>
-              <img src={'http://localhost:5000/' + esportsData.logo} alt="" className='img-fluid my-img2' />
+              <img src={'https://esportsarena.onrender.com/' + esportsData.logo} alt="" className='img-fluid my-img2' />
             </div>
             <div className='col-md-6 col-sm-12'>
             <h3 className='mb-3'><font className='fw-bold me-3'><i class="fa-solid fa-filter me-3"></i>Category : </font><font>{esportsData.category}</font></h3>

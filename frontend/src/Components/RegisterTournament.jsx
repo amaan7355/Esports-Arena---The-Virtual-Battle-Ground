@@ -17,7 +17,7 @@ const RegisterTournament = () => {
             // setSubmitting(true);
 
             // send the data to the server
-            const res = await fetch('http://localhost:5000/register/add', {
+            const res = await fetch('https://esportsarena.onrender.com/register/add', {
                 method: 'POST',
                 body: JSON.stringify(values),
                 headers: {

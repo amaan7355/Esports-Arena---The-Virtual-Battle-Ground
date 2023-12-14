@@ -37,7 +37,7 @@ const SignUp = () => {
       }, 3000);
 
       // send the data to the server
-      const res = await fetch('http://localhost:5000/user/add', {
+      const res = await fetch('https://esportsarena.onrender.com/user/add', {
         method: 'POST',
         body: JSON.stringify(values),
         headers: {
@@ -79,7 +79,7 @@ const SignUp = () => {
     const fd = new FormData();
     fd.append('myfile', file);
 
-    const res = await fetch('http://localhost:5000/utils/uploadfile', {
+    const res = await fetch('https://esportsarena.onrender.com/utils/uploadfile', {
       method: 'POST',
       body: fd
     });

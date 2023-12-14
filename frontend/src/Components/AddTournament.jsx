@@ -56,7 +56,7 @@ const AddTournament = () => {
             // }, 3000);
 
             // send the data to the server
-            const res = await fetch('http://localhost:5000/esport/add', {
+            const res = await fetch('https://esportsarena.onrender.com/esport/add', {
                 method: 'POST',
                 body: JSON.stringify(values),
                 headers: {
@@ -80,7 +80,7 @@ const AddTournament = () => {
         const fd = new FormData();
         fd.append('myfile', file);
 
-        const res = await fetch('http://localhost:5000/utils/uploadfile', {
+        const res = await fetch('https://esportsarena.onrender.com/utils/uploadfile', {
             method: 'POST',
             body: fd
         });
