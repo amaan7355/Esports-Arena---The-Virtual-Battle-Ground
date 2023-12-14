@@ -143,7 +143,7 @@ const SignUp = () => {
                 <img src="./Esports Arena-logos_black.png" className='d-block m-auto w-50' alt="" />
                 <h2 className='w-80 text-center font'>Virtual Reality is a new Meta of Gaming. Raise Your Imagination & Never Stop.</h2><br />
                 <div className='align-items-bottom justify-content-bottom'>
-                <p className='mt-5 text-center'>Do you have any questions?<span className='text-decoration-underline fw-bold ms-2'>Contact us</span></p>
+                <p className='mt-5 text-center'>Do you have any questions?<a className='text-decoration-underline fw-bold ms-2' href='mailto: alamamaan334@gmail.com'>Contact us</a></p>
                 </div>
                 
               </div>
