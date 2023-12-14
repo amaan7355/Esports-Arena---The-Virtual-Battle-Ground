@@ -1,19 +1,19 @@
 import { BrowserRouter, Link, Route, Routes } from 'react-router-dom';
 import './App.css';
-import Home from './components/Home';
-import SignUp from './components/SignUp';
-import Notfound from './components/Notfound';
-import ManageUser from './components/ManageUser';
+import Home from './Components/Home';
+import SignUp from './Components/SignUp';
+import Notfound from './Components/Notfound';
+import ManageUser from './Components/ManageUser';
 import { AnimatePresence } from 'framer-motion';
 import { Toaster } from 'react-hot-toast';
 import { AppProvider } from './AppContext';
 import UserAuth from './UserAuth';
-import Navbar from './components/Navbar';
-import AddTournament from './components/AddTournament';
-import ListTournament from './components/ListTournament';
-import TournamentDetails from './components/TournamentDetails';
-import SignupForm from './components/SignupForm';
-import RegisterTournament from './components/RegisterTournament';
+import Navbar from './Components/Navbar';
+import AddTournament from './Components/AddTournament';
+import ListTournament from './Components/ListTournament';
+import TournamentDetails from './Components/TournamentDetails';
+import SignupForm from './Components/SignupForm';
+import RegisterTournament from './Components/RegisterTournament';
 
 
 function App() {
