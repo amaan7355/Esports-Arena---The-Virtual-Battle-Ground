@@ -476,7 +476,7 @@ const Home = () => {
              <MDBIcon fab className='fab fa-facebook-f' />
           </MDBBtn>*/}
 
-          <MDBBtn
+          {/* <MDBBtn
             rippleColor="dark"
             color='link'
             floating
@@ -486,7 +486,7 @@ const Home = () => {
             role='button'
           > 
             <MDBIcon fab className='fa-twitter' />
-          </MDBBtn>
+          </MDBBtn> */}
 
           <MDBBtn
             rippleColor="dark"
@@ -494,8 +494,9 @@ const Home = () => {
             floating
             size="lg"
             className='text-dark m-1'
-            href='https://www.google.co.in/'
+            href='mailto: alamamaan334@gmail.com'
             role='button'
+            target='_blank'
           >
             <MDBIcon fab className='fa-google' />
           </MDBBtn>
@@ -518,8 +519,9 @@ const Home = () => {
             floating
             size="lg"
             className='text-dark m-1'
-            href='#!'
+            href='https://www.linkedin.com/in/amaan-alam-86b821241'
             role='button'
+            target='blank'
           > 
             <MDBIcon fab className='fa-linkedin' />
           </MDBBtn>
@@ -530,8 +532,9 @@ const Home = () => {
             floating
             size="lg"
             className='text-dark m-1'
-            href='#!'
+            href='https://github.com/amaan7355'
             role='button'
+            target='blank'
           >
             <MDBIcon fab className='fa-github' />
           </MDBBtn>

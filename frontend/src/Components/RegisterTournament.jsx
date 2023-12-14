@@ -1,5 +1,6 @@
 import { useFormik } from 'formik';
-import React from 'react'
+import React from 'react';
+import Swal from 'sweetalert2';
 
 const RegisterTournament = () => {
     const registerTournament = useFormik({
@@ -24,7 +25,24 @@ const RegisterTournament = () => {
                 }
             })
             console.log(res.status);
-            // setSubmitting(false);
+            if (res.status === 200) {
+                Swal.fire({
+                  icon: 'success',
+                  title: 'You have registered successfully',
+                  text: 'Our team will contact you soon for further documentation'
+                })
+                  // .then((result) => {
+                  //   navigate('/signupform');
+                  // }).catch((err) => {
+        
+                  // });
+              } else {
+                Swal.fire({
+                  icon: 'error',
+                  title: 'oops!!',
+                  text: 'Something went wrong'
+                })
+              }
         }
     })
     return (
@@ -36,7 +54,7 @@ const RegisterTournament = () => {
                 }}>
                     <div className='row'>
                         <div className='col-md-6 p-5'>
-                            <form action="" onSubmit={registerTournament.handleChange}>
+                            <form onSubmit={registerTournament.handleSubmit}>
                                 <h1 className='text-center fw-bold mb-4'>Register Here.</h1>
                                 <label htmlFor="" className='form-label fs-5 fw-bold'>Team Name</label>
                                 <input type="text" name='teamname' className='form-control mb-3' onChange={registerTournament.handleChange} value={registerTournament.values.teamname} />
@@ -47,13 +65,13 @@ const RegisterTournament = () => {
                                 <label htmlFor="" className='form-label fs-5 fw-bold'>Team Leader Contact</label>
                                 <input type="text" name='teamleadercontact' className='form-control mb-3' onChange={registerTournament.handleChange} value={registerTournament.values.teamleadercontact} />
                                 <button disabled={registerTournament.isSubmitting} type='submit' className='btn btn-dark w-100 mt-3'>
-                                {
-                                    registerTournament.isSubmitting ? (
-                                        <>
-                                            <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true" style={{ marginRight: '10px' }}></span>Loading...
-                                        </>
-                                    ) : 'Submit'
-                                }
+                                    {
+                                        registerTournament.isSubmitting ? (
+                                            <>
+                                                <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true" style={{ marginRight: '10px' }}></span>Loading...
+                                            </>
+                                        ) : 'Submit'
+                                    }
                                 </button>
                             </form>
                         </div>

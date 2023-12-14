@@ -30,7 +30,7 @@ function App() {
               <Route element={<Home />} path='/' />
               <Route element={<SignUp />} path='/signup' />
               <Route element={<AddTournament />} path='/addtournament' />
-              <Route element={<ListTournament />} path='/listtournament' />
+              <Route element={<UserAuth><ListTournament /></UserAuth>} path='/listtournament' />
               <Route element={<SignupForm />} path='/signupfrom' />
               <Route element={<RegisterTournament />} path='/register' />
               <Route element={<TournamentDetails />} path='/tourdetails/:id' />
