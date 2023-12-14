@@ -13,7 +13,7 @@ import ListTournament from './Components/ListTournament';
 import TournamentDetails from './Components/TournamentDetails';
 import SignupForm from './Components/SignupForm';
 import RegisterTournament from './Components/RegisterTournament';
-import NotFound from './Components/Notfound';
+import NotFound from './Components/NotFound';
 
 
 function App() {
