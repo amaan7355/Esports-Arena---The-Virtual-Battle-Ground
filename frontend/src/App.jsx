@@ -35,6 +35,7 @@ function App() {
               <Route element={<RegisterTournament />} path='/register' />
               <Route element={<TournamentDetails />} path='/tourdetails/:id' />
               <Route element={<UserAuth> <ManageUser /> </UserAuth> } path='/manageuser' />
+              
               <Route element={<NotFound />} path='/*' />
             </Routes>
           </AppProvider>
