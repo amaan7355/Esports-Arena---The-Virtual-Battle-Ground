@@ -2,7 +2,6 @@ import { BrowserRouter, Link, Route, Routes } from 'react-router-dom';
 import './App.css';
 import Home from './Components/Home';
 import SignUp from './Components/SignUp';
-import Notfound from './Components/Notfound';
 import ManageUser from './Components/ManageUser';
 import { AnimatePresence } from 'framer-motion';
 import { Toaster } from 'react-hot-toast';
@@ -14,6 +13,7 @@ import ListTournament from './Components/ListTournament';
 import TournamentDetails from './Components/TournamentDetails';
 import SignupForm from './Components/SignupForm';
 import RegisterTournament from './Components/RegisterTournament';
+import NotFound from './Components/Notfound';
 
 
 function App() {
@@ -35,7 +35,7 @@ function App() {
               <Route element={<RegisterTournament />} path='/register' />
               <Route element={<TournamentDetails />} path='/tourdetails/:id' />
               <Route element={<UserAuth> <ManageUser /> </UserAuth> } path='/manageuser' />
-              <Route element={<Notfound />} path='/*' />
+              <Route element={<NotFound />} path='/*' />
             </Routes>
           </AppProvider>
         </BrowserRouter>
