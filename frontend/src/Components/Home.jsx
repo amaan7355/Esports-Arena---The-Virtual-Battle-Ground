@@ -7,6 +7,7 @@ import {
   MDBIcon,
   MDBBtn
 } from 'mdb-react-ui-kit';
+import { Link } from 'react-router-dom';
 
 const Home = () => {
   return (
@@ -41,24 +42,26 @@ const Home = () => {
                         Your Path to Glory Begins Here!"
                       </span>{" "}
                     </h1>{" "}
-                    <a
-                      className="m-auto btn btn-light btn-lg py-3 px-5 mb-2 mb-md-0 me-3 mb-4"
-                      data-ripple-color="primary"
-                      href="/listtournament"
-                      role="button"
-                      aria-controls=""
-                    >
-                      Get started
-                    </a>{" "}
-                    <a
-                      className="m-auto btn btn-outline-light btn-lg py-3 px-5"
-                      // style={{ backgroundColor: "hsl(218, 100%, 50%)", border: "none" }}
-                      href="/signup"
-                      role="button"
-                      aria-controls="#picker-editor"
-                    >
-                      Register
-                    </a>
+                    <Link to='/listtournament'>
+                      <button
+                        className="m-auto btn btn-light btn-lg py-3 px-5 mb-2 mb-md-0 me-3 mb-4"
+                        data-ripple-color="primary"
+                        role="button"
+                        aria-controls=""
+                      >
+                        Get started
+                      </button>{" "}
+                    </Link>
+                    <Link to='/signup'>
+                      <button
+                        className="m-auto btn btn-outline-light btn-lg py-3 px-5"
+                        // style={{ backgroundColor: "hsl(218, 100%, 50%)", border: "none" }}
+                        role="button"
+                        aria-controls="#picker-editor"
+                      >
+                        Register
+                      </button>
+                    </Link>
                   </div>
                   <div className="col-lg-6 mb-5 mb-lg-0">
                     <div className="ratio ratio-16x9">
@@ -454,17 +457,17 @@ const Home = () => {
       </div>
 
 
-       <div data-draggable="true" className="mt-5" style={{ position: "relative" }}>
+      <div data-draggable="true" className="mt-5" style={{ position: "relative" }}>
         <section draggable="false" className="" data-v-271253ee="" style={{
           background: "hsla(0, 0%, 100%, 0.80)",
           backdropFilter: "blur(30px)"
         }}>
           <section className="mb-10 text-center">
 
-          <MDBFooter className='text-center text-white' style={{ backgroundColor: '#f1f1f1' }}>
-      <MDBContainer className='pt-4'>
-        <section className='mb-4'>
-          {/*<MDBBtn
+            <MDBFooter className='text-center text-white' style={{ backgroundColor: '#f1f1f1' }}>
+              <MDBContainer className='pt-4'>
+                <section className='mb-4'>
+                  {/*<MDBBtn
             rippleColor="dark"
             color='link'
             floating
@@ -476,7 +479,7 @@ const Home = () => {
              <MDBIcon fab className='fab fa-facebook-f' />
           </MDBBtn>*/}
 
-          {/* <MDBBtn
+                  {/* <MDBBtn
             rippleColor="dark"
             color='link'
             floating
@@ -488,20 +491,20 @@ const Home = () => {
             <MDBIcon fab className='fa-twitter' />
           </MDBBtn> */}
 
-          <MDBBtn
-            rippleColor="dark"
-            color='link'
-            floating
-            size="lg"
-            className='text-dark m-1'
-            href='mailto: alamamaan334@gmail.com'
-            role='button'
-            target='_blank'
-          >
-            <MDBIcon fab className='fa-google' />
-          </MDBBtn>
+                  <MDBBtn
+                    rippleColor="dark"
+                    color='link'
+                    floating
+                    size="lg"
+                    className='text-dark m-1'
+                    href='mailto: alamamaan334@gmail.com'
+                    role='button'
+                    target='_blank'
+                  >
+                    <MDBIcon fab className='fa-google' />
+                  </MDBBtn>
 
-          {/*<MDBBtn
+                  {/*<MDBBtn
             rippleColor="dark"
             color='link'
             floating
@@ -513,45 +516,45 @@ const Home = () => {
              <MDBIcon fab className='fa-instagram' />
           </MDBBtn>*/}
 
-          <MDBBtn
-            rippleColor="dark"
-            color='link'
-            floating
-            size="lg"
-            className='text-dark m-1'
-            href='https://www.linkedin.com/in/amaan-alam-86b821241'
-            role='button'
-            target='blank'
-          > 
-            <MDBIcon fab className='fa-linkedin' />
-          </MDBBtn>
+                  <MDBBtn
+                    rippleColor="dark"
+                    color='link'
+                    floating
+                    size="lg"
+                    className='text-dark m-1'
+                    href='https://www.linkedin.com/in/amaan-alam-86b821241'
+                    role='button'
+                    target='blank'
+                  >
+                    <MDBIcon fab className='fa-linkedin' />
+                  </MDBBtn>
 
-          <MDBBtn
-            rippleColor="dark"
-            color='link'
-            floating
-            size="lg"
-            className='text-dark m-1'
-            href='https://github.com/amaan7355'
-            role='button'
-            target='blank'
-          >
-            <MDBIcon fab className='fa-github' />
-          </MDBBtn>
-        </section>
-      </MDBContainer>
+                  <MDBBtn
+                    rippleColor="dark"
+                    color='link'
+                    floating
+                    size="lg"
+                    className='text-dark m-1'
+                    href='https://github.com/amaan7355'
+                    role='button'
+                    target='blank'
+                  >
+                    <MDBIcon fab className='fa-github' />
+                  </MDBBtn>
+                </section>
+              </MDBContainer>
 
-      <div className='text-center text-dark p-3'>
-        © 2023 Esports Arena
-        {/* <a className='text-dark' href='https://mdbootstrap.com/'>
+              <div className='text-center text-dark p-3'>
+                © 2023 Esports Arena
+                {/* <a className='text-dark' href='https://mdbootstrap.com/'>
           Esports Arena
         </a> */}
-      </div>
-    </MDBFooter>
+              </div>
+            </MDBFooter>
 
 
 
-           {/* <div className="p-5">
+            {/* <div className="p-5">
                <h2 className="mb-5 display-5 fw-bold ls-tight">
                 {" "}
                 <span>Let's stay in touch</span> <br />{" "}
@@ -599,7 +602,7 @@ const Home = () => {
             </div>*/}
           </section>
         </section>
-      </div> 
+      </div>
 
 
 
