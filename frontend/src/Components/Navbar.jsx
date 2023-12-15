@@ -14,7 +14,7 @@ const Navbar = () => {
         if (loggedIn) {
             return ( 
             <>
-            <li className='nav-item'><button className='btn btn-danger' onClick={logout}>Logout</button></li>
+            <li className='nav-item'><button className='btn btn-outline-light m-2' onClick={logout}>Logout</button></li>
             <li>
                 <img height={50} className='rounded-circle' src={"https://esportsarena.onrender.com/" +avatar} alt="avatar" />
             </li>
